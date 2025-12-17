@@ -49,3 +49,8 @@ next-env.d.ts
 *.webp
 *.svg
 *.pdf
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
