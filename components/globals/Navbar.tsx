@@ -16,7 +16,7 @@ export default function Navbar() {
         { name: t.navbar.about, href: "#about" },
         { name: t.navbar.projects, href: "#projects" },
         { name: t.navbar.skills, href: "#skills" },
-        { name: t.navbar.showcase, href: "#showcase" },
+
         { name: t.navbar.contact, href: "#contact" },
     ];
 

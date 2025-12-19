@@ -91,7 +91,7 @@ export const DATA = {
       about: "About",
       projects: "Projects",
       skills: "Skills",
-      showcase: "Showcase",
+
       contact: "Contact",
     },
     hero: {
@@ -157,20 +157,7 @@ export const DATA = {
         },
       ] as ProjectItem[]
     },
-    showcase: {
-      title: "Why Next.js?",
-      subtitle: "Demonstrating the power of the App Router & Server Components",
-      ssgTitle: "Static Site Generation",
-      ssgDesc: "Pages are pre-rendered at build time for ultra-fast loading. This portfolio uses SSG for the project pages.",
-      buildTime: "Build Time: Fast",
-      apiTitle: "API Routes",
-      apiDesc: "Built-in serverless functions to handle backend logic. Try it out below:",
-      clickToFetch: "Click to fetch server time",
-      testApi: "Test API Route",
-      serverTitle: "Server Components",
-      serverDesc: "React components that render on the server, reducing the JavaScript bundle size sent to the client.",
-      bundleReduced: "Bundle Size Reduced"
-    },
+
     contact: {
       title: "Get In Touch",
       subtitle: "Have a project in mind or just want to say hi? I'm always open to discussing new opportunities.",
@@ -192,7 +179,7 @@ export const DATA = {
       about: "Sobre mí",
       projects: "Proyectos",
       skills: "Habilidades",
-      showcase: "Demo",
+
       contact: "Contacto",
     },
     hero: {
@@ -258,20 +245,7 @@ export const DATA = {
         },
       ] as ProjectItem[]
     },
-    showcase: {
-      title: "¿Por qué Next.js?",
-      subtitle: "Demostrando el poder del App Router y Server Components",
-      ssgTitle: "Generación de Sitio Estático (SSG)",
-      ssgDesc: "Las páginas se pre-renderizan en el tiempo de compilación para una carga ultra rápida. Este portafolio usa SSG para las páginas de proyecto.",
-      buildTime: "Tiempo de Compilación: Rápido",
-      apiTitle: "Rutas API",
-      apiDesc: "Funciones serverless integradas para manejar lógica backend. Pruébalo abajo:",
-      clickToFetch: "Click para obtener hora del servidor",
-      testApi: "Probar Ruta API",
-      serverTitle: "Componentes de Servidor",
-      serverDesc: "Componentes React que se renderizan en el servidor, reduciendo el tamaño del bundle de JavaScript enviado al cliente.",
-      bundleReduced: "Tamaño de Bundle Reducido"
-    },
+
     contact: {
       title: "Contacto",
       subtitle: "¿Tienes un proyecto en mente o solo quieres saludar? Siempre estoy abierto a nuevas oportunidades.",
