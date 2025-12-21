@@ -42,13 +42,13 @@ yarn-error.log*
 next-env.d.ts
 
 # media content
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.webp
-*.svg
-*.pdf
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.webp
+# *.svg
+# *.pdf
 
 # amplify
 .amplify
