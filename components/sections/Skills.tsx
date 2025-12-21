@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Layout, Server, Wrench, Code2 } from "lucide-react";
+import { Layout, Server, Wrench, Code2, Cloud } from "lucide-react";
 import { SKILLS } from "@/lib/data";
 import { useLanguage } from "@/context/LanguageContext";
 import { getTechIcon } from "../ui/TechIcons";
@@ -20,6 +20,8 @@ export default function Skills() {
                 return "hover:border-emerald-500 hover:shadow-emerald-500/50 hover:bg-emerald-500/10";
             case "Tools":
                 return "hover:border-blue-500 hover:shadow-blue-500/50 hover:bg-blue-500/10";
+            case "Cloud & Infrastructure":
+                return "hover:border-purple-500 hover:shadow-purple-500/50 hover:bg-purple-500/10";
             default:
                 return "hover:border-white/20";
         }
@@ -35,6 +37,8 @@ export default function Skills() {
                 return <Server className="w-6 h-6" />;
             case "Tools":
                 return <Wrench className="w-6 h-6" />;
+            case "Cloud & Infrastructure":
+                return <Cloud className="w-6 h-6" />;
             default:
                 return <Code2 className="w-6 h-6" />;
         }
@@ -80,11 +84,18 @@ export default function Skills() {
                                         whileTap={{ scale: 0.95 }}
                                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
                                         viewport={{ once: true }}
-                                        className={`glass-card px-6 py-3 rounded-full transition-all duration-300 cursor-default border border-white/5 cursor-pointer shadow-lg hover:shadow-xl ${getCategoryColor(skill.category)} flex items-center gap-2`}
+                                        className={`glass-card group relative px-6 py-3 rounded-full transition-all duration-300 cursor-default border border-white/5 cursor-pointer shadow-lg hover:shadow-xl ${getCategoryColor(skill.category)} flex items-center gap-2`}
                                     >
                                         <span className="text-xl">{getTechIcon(skill.name)}</span>
                                         <span className="font-medium text-white">{skill.name}</span>
                                         <span className="ml-2 text-xs text-gray-400 opacity-60">| {skill.level}</span>
+                                        {/* @ts-ignore */}
+                                        {skill.description && (
+                                            <span className="hidden group-hover:block absolute -top-12 left-1/2 -translate-x-1/2 w-64 p-2 bg-black/90 text-white text-xs rounded border border-white/10 z-20 pointer-events-none">
+                                                {/* @ts-ignore */}
+                                                {skill.description}
+                                            </span>
+                                        )}
                                     </motion.div>
                                 ))}
                             </div>

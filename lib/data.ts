@@ -82,6 +82,30 @@ export const SKILLS = [
   { name: "PostgreSQL", level: "Intermediate", category: "Backend" },
   { name: "Spring Boot", level: "Basic", category: "Backend" },
   { name: "Docker", level: "Basic", category: "Tools" },
+  {
+    name: "AWS S3",
+    level: "Intermediate",
+    category: "Cloud & Infrastructure",
+    description: "Secure cloud storage and asset management"
+  },
+  {
+    name: "AWS Amplify",
+    level: "Intermediate",
+    category: "Cloud & Infrastructure",
+    description: "Rapid full-stack deployment and seamless CI/CD"
+  },
+  {
+    name: "CloudFront",
+    level: "Intermediate",
+    category: "Cloud & Infrastructure",
+    description: "Optimizing performance through global content delivery"
+  },
+  {
+    name: "Route 53",
+    level: "Intermediate",
+    category: "Cloud & Infrastructure",
+    description: "DNS configuration and domain management"
+  },
 ];
 
 export const DATA = {
