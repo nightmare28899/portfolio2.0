@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Layout, Server, Wrench, Code2, Cloud } from "lucide-react";
+import { Layout, Server, Wrench, Code2, Cloud, Smartphone, Palette, Database } from "lucide-react";
 import { SKILLS } from "@/lib/data";
 import { useLanguage } from "@/context/LanguageContext";
 import { getTechIcon } from "../ui/TechIcons";
@@ -22,6 +22,12 @@ export default function Skills() {
                 return "hover:border-blue-500 hover:shadow-blue-500/50 hover:bg-blue-500/10";
             case "Cloud & Infrastructure":
                 return "hover:border-purple-500 hover:shadow-purple-500/50 hover:bg-purple-500/10";
+            case "Mobile":
+                return "hover:border-amber-500 hover:shadow-amber-500/50 hover:bg-amber-500/10";
+            case "CSS & UI":
+                return "hover:border-pink-500 hover:shadow-pink-500/50 hover:bg-pink-500/10";
+            case "Databases":
+                return "hover:border-cyan-500 hover:shadow-cyan-500/50 hover:bg-cyan-500/10";
             default:
                 return "hover:border-white/20";
         }
@@ -39,6 +45,12 @@ export default function Skills() {
                 return <Wrench className="w-6 h-6" />;
             case "Cloud & Infrastructure":
                 return <Cloud className="w-6 h-6" />;
+            case "Mobile":
+                return <Smartphone className="w-6 h-6" />;
+            case "CSS & UI":
+                return <Palette className="w-6 h-6" />;
+            case "Databases":
+                return <Database className="w-6 h-6" />;
             default:
                 return <Code2 className="w-6 h-6" />;
         }

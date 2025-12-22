@@ -17,6 +17,8 @@ export interface ProjectItem {
   description: string;
   demo?: string;
   tags: string[];
+  type: "mobile" | "web";
+  titleLink?: string;
 }
 
 export const COMPANIES = [
@@ -62,26 +64,36 @@ export const SOCIALS = [
 ];
 
 export const SKILLS = [
-  { name: "React", level: "Experienced", category: "Frontend" },
   { name: "TypeScript", level: "Intermediate", category: "Languages" },
   { name: "JavaScript", level: "Experienced", category: "Languages" },
-  { name: "Next.js", level: "Intermediate", category: "Frontend" },
-  { name: "TailwindCSS", level: "Experienced", category: "Frontend" },
-  { name: "Angular", level: "Intermediate", category: "Frontend" },
-  { name: "Node.js", level: "Basic", category: "Backend" },
+  { name: "Java", level: "Basic", category: "Languages" },
+  { name: "PHP", level: "Intermediate", category: "Languages" },
   { name: "HTML5", level: "Experienced", category: "Frontend" },
-  { name: "CSS3", level: "Experienced", category: "Frontend" },
-  { name: "Bootstrap", level: "Intermediate", category: "Frontend" },
+  { name: "React", level: "Experienced", category: "Frontend" },
+  { name: "Next.js", level: "Intermediate", category: "Frontend" },
+  { name: "Vue", level: "Intermediate", category: "Frontend" },
+  { name: "Angular", level: "Basic", category: "Frontend" },
+  { name: "CSS3", level: "Intermediate", category: "CSS & UI" },
+  { name: "SASS", level: "Intermediate", category: "CSS & UI" },
+  { name: "Bootstrap", level: "Experienced", category: "CSS & UI" },
+  { name: "TailwindCSS", level: "Intermediate", category: "CSS & UI" },
+  { name: "Material UI", level: "Experienced", category: "CSS & UI" },
+  { name: "Ant-Design", level: "Experienced", category: "CSS & UI" },
+  { name: "React-native", level: "Intermediate", category: "Mobile" },
+  { name: "Ionic", level: "Intermediate", category: "Mobile" },
+  { name: "Capacitor", level: "Basic", category: "Mobile" },
+  { name: "Kotlin", level: "Basic", category: "Mobile" },
+  { name: "Jetpack Compose", level: "Basic", category: "Mobile" },
+  { name: "Node.js", level: "Basic", category: "Backend" },
+  { name: "Laravel", level: "Intermediate", category: "Backend" },
+  { name: "Spring Boot", level: "Basic", category: "Backend" },
+  { name: "Express.js", level: "Basic", category: "Backend" },
+  { name: "MySQL", level: "Basic", category: "Databases" },
+  { name: "PostgreSQL", level: "Basic", category: "Databases" },
   { name: "Vite", level: "Intermediate", category: "Tools" },
   { name: "Git", level: "Intermediate", category: "Tools" },
-  { name: "SASS", level: "Intermediate", category: "Frontend" },
-  { name: "PHP", level: "Intermediate", category: "Languages" },
-  { name: "Laravel", level: "Intermediate", category: "Backend" },
-  { name: "Express.js", level: "Basic", category: "Backend" },
-  { name: "MySQL", level: "Intermediate", category: "Backend" },
-  { name: "PostgreSQL", level: "Intermediate", category: "Backend" },
-  { name: "Spring Boot", level: "Basic", category: "Backend" },
   { name: "Docker", level: "Basic", category: "Tools" },
+  { name: "xcode", level: "Basic", category: "Tools" },
   {
     name: "AWS S3",
     level: "Intermediate",
@@ -115,7 +127,6 @@ export const DATA = {
       about: "About",
       projects: "Projects",
       skills: "Skills",
-
       contact: "Contact",
     },
     hero: {
@@ -146,7 +157,6 @@ export const DATA = {
     projects: {
       title: "Featured Projects",
       viewSource: "View Source",
-      liveDemo: "Live Demo",
       back: "Back to Projects",
       items: [
         {
@@ -157,15 +167,20 @@ export const DATA = {
           img4: assetUrl("images/talentonet/redaguilapp/redaguila4.webp"),
           title: "RedÁguila",
           description: "It is an official Club América application that allows fans to access exclusive content, team information, and experiences specially designed for supporters.",
+          demo: "https://play.google.com/store/apps/details?id=com.clubamerica.redaguila_app&hl=es_MX",
           tags: ["TypeScript", "React-native", "Styled-components", "S3", "Design Patterns"],
+          type: "mobile",
+          titleLink: "https://play.google.com/store/apps/details?id=com.clubamerica.redaguila_app&hl=es_MX",
         },
         {
           id: 2,
-          img: assetUrl("images/government/ingresos-propios-home.png"),
+          img: assetUrl("images/government/ingresos-propios-login.png"),
+          img2: assetUrl("images/government/ingresos-propios-home.png"),
           title: "Ingresos Propios",
           description: "A government project to manage the payments of the state of Michoacán.",
           demo: "https://www.ingresospropios.michoacan.gob.mx/",
           tags: ["React", "React Router DOM", "Material UI", "Redux", "S3", "Hooks", "Modular Architecture", "Vite"],
+          type: "web",
         },
         {
           id: 3,
@@ -177,7 +192,10 @@ export const DATA = {
           img6: assetUrl("images/talentonet/simonapp/simon6.webp"),
           title: "SIMON",
           description: "SIMON is an application that allows our customers to review their usage and make payments.",
+          demo: "https://play.google.com/store/apps/details?id=mx.com.divox.simonapp&hl=es_MX",
           tags: ["TypeScript", "Angular", "Ionic", "Capacitor", "Karma", "Jasmine"],
+          type: "mobile",
+          titleLink: "https://play.google.com/store/apps/details?id=mx.com.divox.simonapp&hl=es_MX",
         },
       ] as ProjectItem[]
     },
@@ -203,7 +221,6 @@ export const DATA = {
       about: "Sobre mí",
       projects: "Proyectos",
       skills: "Habilidades",
-
       contact: "Contacto",
     },
     hero: {
@@ -234,7 +251,6 @@ export const DATA = {
     projects: {
       title: "Proyectos Destacados",
       viewSource: "Ver Código",
-      liveDemo: "Ver Demo",
       back: "Volver a Proyectos",
       items: [
         {
@@ -246,6 +262,8 @@ export const DATA = {
           title: "RedÁguila",
           description: "Es una aplicación oficial del Club América que permite a los aficionados acceder a contenido exclusivo, información del equipo y experiencias diseñadas especialmente para la afición.",
           tags: ["TypeScript", "React-native", "Styled-components", "S3", "Design Patterns"],
+          type: "mobile",
+          titleLink: "https://play.google.com/store/apps/details?id=com.clubamerica.redaguila_app&hl=es_MX",
         },
         {
           id: 2,
@@ -254,6 +272,7 @@ export const DATA = {
           description: "Un proyecto del gobierno.",
           demo: "https://www.ingresospropios.michoacan.gob.mx/",
           tags: ["React", "React Router DOM", "Material UI", "Redux", "S3", "Hooks", "Modular Architecture", "Vite"],
+          type: "web",
         },
         {
           id: 3,
@@ -265,7 +284,10 @@ export const DATA = {
           img6: assetUrl("images/talentonet/simonapp/simon6.webp"),
           title: "SIMON",
           description: "SIMON, es una aplicación que permite a nuestros clientes revisar sus consumos y realizar pagos.",
+          demo: "https://play.google.com/store/apps/details?id=mx.com.divox.simonapp&hl=es_MX",
           tags: ["TypeScript", "Angular", "Ionic", "Capacitor", "Karma", "Jasmine"],
+          type: "mobile",
+          titleLink: "https://play.google.com/store/apps/details?id=mx.com.divox.simonapp&hl=es_MX",
         },
       ] as ProjectItem[]
     },
