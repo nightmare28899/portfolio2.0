@@ -184,25 +184,11 @@ export default function ProjectCard({ project, index }: { project: ProjectItem; 
                     {project.titleLink ? (
                         <Link href={project.titleLink} target="_blank">{project.title}</Link>
                     ) : (
-                        <Link href={`/projects/${project.id}`}>{project.title}</Link>
+                        <Link href={project.demo!} target="_blank">{project.title}</Link>
                     )}
                 </h3>
-                <p className="text-gray-400 text-sm mb-4 line-clamp-3">{project.description}</p>
 
-                {images.length > 1 && (
-                    <div className="flex gap-4 mb-4">
-                        {project.github && (
-                            <Link href={project.github!} target="_blank" className="text-sm flex items-center gap-1 hover:text-primary transition-colors">
-                                <FiGithub size={16} /> Code
-                            </Link>
-                        )}
-                        {project.demo && (
-                            <Link href={project.demo!} target="_blank" className="text-sm flex items-center gap-1 hover:text-primary transition-colors">
-                                {project.title}
-                            </Link>
-                        )}
-                    </div>
-                )}
+                <p className="text-gray-400 text-sm mb-4 line-clamp-3">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mt-auto">
                     {(showAllTags ? project.tags : project.tags.slice(0, 3)).map((tag) => (
