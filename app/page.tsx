@@ -5,6 +5,7 @@ import Projects from "@/components/sections/Projects";
 
 import TechInfrastructure from "@/components/sections/TechInfrastructure";
 import Contact from "@/components/sections/Contact";
+import Footer from "@/components/globals/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <TechInfrastructure />
 
       <Contact />
+      <Footer />
     </main>
   );
 }

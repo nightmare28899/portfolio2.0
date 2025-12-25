@@ -90,7 +90,7 @@ export const DATA = {
       about: "About",
       projects: "Projects",
       skills: "Skills",
-      tech: "PORTFOLIO",
+      tech: "Portfolio",
       contact: "Contact",
     },
     hero: {
@@ -199,6 +199,10 @@ export const DATA = {
         route53: "Reliable and scalable DNS management",
         ionos: "Domain management and integration"
       }
+    },
+    footer: {
+      rights: "All rights reserved.",
+      role: "Software Engineer"
     }
   },
   es: {
@@ -314,6 +318,10 @@ export const DATA = {
         route53: "Gestión de DNS confiable y escalable",
         ionos: "Gestión e integración de dominios"
       }
+    },
+    footer: {
+      rights: "Todos los derechos reservados.",
+      role: "Ingeniero de Software"
     }
   }
 };

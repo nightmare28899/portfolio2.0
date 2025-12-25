@@ -19,7 +19,7 @@ export default function Hero() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="text-secondary font-medium tracking-wider mb-4 block uppercase text-sm">
+                    <span className="text-secondary font-medium tracking-wider mb-4 block uppercase text-lg">
                         {t.hero.role}
                     </span>
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
