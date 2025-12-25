@@ -11,13 +11,14 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const { language, toggleLanguage, t } = useLanguage();
-    const activeSection = useActiveSection(["hero", "about", "projects", "skills", "contact"]);
+    const activeSection = useActiveSection(["hero", "about", "projects", "skills", "tech-infrastructure", "contact"]);
 
     const navLinks = [
         { name: t.navbar.home, href: "#hero" },
         { name: t.navbar.about, href: "#about" },
-        { name: t.navbar.projects, href: "#projects" },
         { name: t.navbar.skills, href: "#skills" },
+        { name: t.navbar.projects, href: "#projects" },
+        { name: t.navbar.tech, href: "#tech-infrastructure" },
         { name: t.navbar.contact, href: "#contact" },
     ];
 

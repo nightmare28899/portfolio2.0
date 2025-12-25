@@ -1,23 +1,5 @@
 import { assetUrl } from "@/lib/utils";
-
-export type Language = "en" | "es";
-
-export interface ProjectItem {
-  id: number;
-  img: string;
-  img2?: string;
-  img3?: string;
-  img4?: string;
-  img5?: string;
-  img6?: string;
-  title: string;
-  github?: string;
-  description: string;
-  demo?: string;
-  tags: string[];
-  type: "mobile" | "web";
-  titleLink?: string;
-}
+import { ProjectItem } from "@/lib/types";
 
 export const COMPANIES = [
   { name: "La Voz", logo: assetUrl("images/carousel-logos/logo-lavoz.jpg") },
@@ -108,6 +90,7 @@ export const DATA = {
       about: "About",
       projects: "Projects",
       skills: "Skills",
+      tech: "PORTFOLIO",
       contact: "Contact",
     },
     hero: {
@@ -194,6 +177,28 @@ export const DATA = {
       sending: "Sending...",
       success: "Sent Successfully",
       error: "Failed to Send"
+    },
+    techInfrastructure: {
+      title: "Portfolio Technologies & Infrastructure",
+      subtitle: "Powered by modern tech and robust cloud infrastructure",
+      frontend: {
+        title: "Modern Frontend",
+        description: "Built for speed and user experience"
+      },
+      infrastructure: {
+        title: "Cloud Infrastructure",
+        description: "Scalable, secure, and globally distributed"
+      },
+      items: {
+        nextjs: "Server-side rendering and static optimization",
+        tailwindcss: "Utility-first styling for rapid design",
+        typescript: "Type safety for robust code",
+        s3: "Highly durable asset storage",
+        cloudfront: "Low-latency global content delivery",
+        amplify: "Continuous deployment and automated CI/CD",
+        route53: "Reliable and scalable DNS management",
+        ionos: "Domain management and integration"
+      }
     }
   },
   es: {
@@ -202,6 +207,7 @@ export const DATA = {
       about: "Sobre mí",
       projects: "Proyectos",
       skills: "Habilidades",
+      tech: "Portafolio",
       contact: "Contacto",
     },
     hero: {
@@ -286,6 +292,28 @@ export const DATA = {
       sending: "Enviando...",
       success: "Enviado con Éxito",
       error: "Error al Enviar"
+    },
+    techInfrastructure: {
+      title: "Portafolio Tecnológia e Infraestructura",
+      subtitle: "Impulsado por tecnologías modernas y una infraestructura en la nube robusta",
+      frontend: {
+        title: "Frontend Moderno",
+        description: "Construido para velocidad y experiencia de usuario"
+      },
+      infrastructure: {
+        title: "Infraestructura Cloud",
+        description: "Escalable, segura y distribuida globalmente"
+      },
+      items: {
+        nextjs: "Renderizado del lado del servidor y optimización estática",
+        tailwindcss: "Estilos priorizando la utilidad para un diseño rápido",
+        typescript: "Seguridad de tipos para un código robusto",
+        s3: "Almacenamiento de activos altamente duradero",
+        cloudfront: "Entrega de contenido global de baja latencia",
+        amplify: "Despliegue continuo y CI/CD automatizado",
+        route53: "Gestión de DNS confiable y escalable",
+        ionos: "Gestión e integración de dominios"
+      }
     }
   }
 };

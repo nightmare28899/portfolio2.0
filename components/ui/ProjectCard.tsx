@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { FiGithub } from "react-icons/fi";
-import { type ProjectItem } from "@/lib/data";
+import { type ProjectItem } from "@/lib/types";
 import { getTechIcon } from "./TechIcons";
 
 export default function ProjectCard({ project, index }: { project: ProjectItem; index: number }) {
