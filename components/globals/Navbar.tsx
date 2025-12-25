@@ -5,18 +5,19 @@ import Link from "next/link";
 import { Menu, X, Code2, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const { language, toggleLanguage, t } = useLanguage();
+    const activeSection = useActiveSection(["hero", "about", "projects", "skills", "contact"]);
 
     const navLinks = [
         { name: t.navbar.home, href: "#hero" },
         { name: t.navbar.about, href: "#about" },
         { name: t.navbar.projects, href: "#projects" },
         { name: t.navbar.skills, href: "#skills" },
-
         { name: t.navbar.contact, href: "#contact" },
     ];
 
@@ -60,15 +61,18 @@ export default function Navbar() {
                 </Link>
 
                 <div className="hidden md:flex gap-8 items-center">
-                    {navLinks.map((link) => (
-                        <Link
-                            key={link.name}
-                            href={link.href}
-                            className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wide opacity-80 hover:opacity-100"
-                        >
-                            {link.name}
-                        </Link>
-                    ))}
+                    {navLinks.map((link) => {
+                        const isActive = activeSection === link.href.substring(1);
+                        return (
+                            <Link
+                                key={link.name}
+                                href={link.href}
+                                className={`text-sm font-medium transition-all duration-300 uppercase tracking-wide ${isActive ? "text-primary scale-105" : "text-foreground opacity-80 hover:opacity-100 hover:text-primary"}`}
+                            >
+                                {link.name}
+                            </Link>
+                        );
+                    })}
 
                     <button
                         onClick={toggleLanguage}
@@ -95,16 +99,19 @@ export default function Navbar() {
                         exit={{ opacity: 0, y: -20 }}
                         className="absolute top-full left-0 w-full glass border-b border-white/10 flex flex-col items-center py-8 gap-6 md:hidden"
                     >
-                        {navLinks.map((link) => (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                onClick={() => setIsOpen(false)}
-                                className="text-lg font-medium hover:text-primary"
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
+                        {navLinks.map((link) => {
+                            const isActive = activeSection === link.href.substring(1);
+                            return (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    onClick={() => setIsOpen(false)}
+                                    className={`text-lg font-medium transition-colors ${isActive ? "text-primary" : "text-foreground hover:text-primary"}`}
+                                >
+                                    {link.name}
+                                </Link>
+                            );
+                        })}
                         <button
                             onClick={() => {
                                 toggleLanguage();

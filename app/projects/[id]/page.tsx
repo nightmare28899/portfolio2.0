@@ -79,7 +79,7 @@ const ProjectDetail = ({ params }: { params: { id: string } }) => {
                                     rel="noreferrer"
                                     className="flex items-center gap-2 px-6 py-3 rounded-xl bg-primary hover:bg-primary/90 transition-colors font-medium text-white shadow-lg shadow-primary/25"
                                 >
-                                    <ExternalLink size={20} /> {t.projects.liveDemo}
+                                    <ExternalLink size={20} /> Live Demo
                                 </a>
                             )}
                         </div>
