@@ -28,91 +28,91 @@ export const PERSONAL_INFO = {
 export const SKILLS: SkillItem[] = [
   {
     name: "React",
-    level: "Expert",
+
     category: "Core Expertise",
     description: "Advanced component composition, custom hooks, and state management patterns for large-scale applications."
   },
   {
     name: "Next.js",
-    level: "Advanced",
+
     category: "Core Expertise",
     description: "Building performance-critical web apps with SSR, ISR, and App Router architecture."
   },
   {
     name: "TypeScript",
-    level: "Advanced",
+
     category: "Core Expertise",
     description: "Enforcing strict type safety to improve code reliability and developer experience in complex codebases."
   },
   {
     name: "JavaScript",
-    level: "Expert",
+
     category: "Core Expertise",
     description: "Deep understanding of the event loop, async programming, and modern ES6+ features."
   },
   {
     name: "Tailwind CSS",
-    level: "Expert",
+
     category: "Core Expertise",
     description: "Architecting responsive, scalable design systems with utility-first CSS."
   },
   {
     name: "Clean Architecture",
-    level: "Advanced",
+
     category: "Engineering & Architecture",
     description: "Designing modular, maintainable codebases using SOLID principles and layered architecture."
   },
   {
     name: "Performance",
-    level: "Advanced",
+
     category: "Engineering & Architecture",
     description: "Optimizing Core Web Vitals, bundle size, and ensuring 60fps rendering performance."
   },
   {
     name: "REST & GraphQL",
-    level: "Advanced",
+
     category: "Engineering & Architecture",
     description: "Designing and consuming efficient APIs for seamless data layering."
   },
   {
     name: "Mobile Dev",
-    level: "Intermediate",
+
     category: "Engineering & Architecture",
     description: "Cross-platform mobile development with React Native, Ionic, and Capacitor."
   },
   {
     name: "AWS",
-    level: "Intermediate",
+
     category: "Infrastructure & Tooling",
     description: "Cloud-native deployment using S3, CloudFront, Amplify, and Route53 for global scale."
   },
   {
     name: "Docker",
-    level: "Intermediate",
+
     category: "Infrastructure & Tooling",
     description: "Containerizing applications for consistent development, testing, and production environments."
   },
   {
     name: "CI/CD",
-    level: "Intermediate",
+
     category: "Infrastructure & Tooling",
     description: "Automating testing and deployment pipelines to ensure reliable delivery."
   },
   {
     name: "Tech Leadership",
-    level: "Experienced",
+
     category: "Team & Leadership",
     description: "Leading frontend initiatives, architectural decision-making, and driving technical standards."
   },
   {
     name: "Code Review",
-    level: "Experienced",
+
     category: "Team & Leadership",
     description: "Ensuring code quality, preventing regression, and mentoring team members through reviews."
   },
   {
     name: "Agile Process",
-    level: "Experienced",
+
     category: "Team & Leadership",
     description: "Streamlining development workflows and collaborating in fast-paced Scrum environments."
   },
@@ -131,7 +131,7 @@ export const DATA = {
     hero: {
       role: "Full-Stack Developer",
       greeting: "Hello, I'm",
-      description: "I am a Full-Stack developer with a passion for creating beautiful responsive websites. I have a passion for learning new technologies and practicing by doing projects; I am dedicated to building robust and scalable web applications.",
+      description: "I am a Front-End focused Full-Stack Developer with experience building scalable, maintainable web applications for real-world products.\n\nI currently work as a Front-End Team Coordinator, contributing to technical decision-making, code reviews, and close collaboration with designers, backend engineers, and stakeholders to deliver high-quality, production-ready solutions.",
       ctaProject: "View Projects",
       ctaCV: "Download CV",
       techTitle: "Modern Tech",
@@ -147,7 +147,7 @@ export const DATA = {
       available: "Available",
       location: "Morelia, Michoacán",
       locationLabel: "Location",
-      quote: "Passionate about building accessible, pixel-perfect, and performant web experiences.",
+      quote: "Building production-ready web applications with a focus on performance, accessibility, and long-term maintainability.",
       trusted: "Trusted by Innovative Teams"
     },
     skills: {
@@ -284,7 +284,7 @@ export const DATA = {
     hero: {
       role: "Desarrollador Full-Stack",
       greeting: "Hola, soy",
-      description: "Soy un desarrollador Full-Stack apasionado por crear sitios web hermosos y responsivos. Me encanta aprender nuevas tecnologías y practicar creando proyectos; me dedico a construir aplicaciones web robustas y escalables.",
+      description: "Soy un Desarrollador Full-Stack enfocado en el Front-End con experiencia en la construcción de aplicaciones web escalables y mantenibles para productos del mundo real.\n\nActualmente trabajo como Coordinador de Equipo Front-End, contribuyendo a la toma de decisiones técnicas, revisiones de código y una estrecha colaboración con diseñadores, ingenieros backend y partes interesadas para entregar soluciones de alta calidad listas para producción.",
       ctaProject: "Ver Proyectos",
       ctaCV: "Descargar CV",
       techTitle: "Tecnología Moderna",
@@ -300,7 +300,7 @@ export const DATA = {
       available: "Disponible",
       location: "Morelia, Michoacán",
       locationLabel: "Ubicación",
-      quote: "Apasionado por construir experiencias web accesibles, perfectas y eficientes.",
+      quote: "Construyendo aplicaciones web listas para producción con un enfoque en rendimiento, accesibilidad y mantenibilidad a largo plazo.",
       trusted: "Con la confianza de equipos innovadores"
     },
     skills: {

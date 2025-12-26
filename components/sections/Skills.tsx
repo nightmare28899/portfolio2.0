@@ -84,7 +84,6 @@ export default function Skills() {
                                     >
                                         <span className="text-xl">{getTechIcon(skill.name)}</span>
                                         <span className="font-medium text-white">{skill.name}</span>
-                                        <span className="ml-2 text-xs text-gray-400 opacity-60">| {skill.level}</span>
                                         {skill.description && (
                                             <span className="hidden group-hover:block absolute -top-24 left-1/2 -translate-x-1/2 w-64 p-3 bg-black/90 text-white text-xs rounded-lg border border-white/10 z-20 pointer-events-none shadow-xl">
                                                 {skill.description}
