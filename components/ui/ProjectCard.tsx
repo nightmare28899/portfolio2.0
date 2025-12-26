@@ -9,7 +9,7 @@ import { FiGithub } from "react-icons/fi";
 import { type ProjectItem } from "@/lib/types";
 import { getTechIcon } from "./TechIcons";
 
-export default function ProjectCard({ project, index }: { project: ProjectItem; index: number }) {
+export default function ProjectCard({ project, index, onClick }: { project: ProjectItem; index: number; onClick: () => void }) {
     const images = [
         project.img,
         project.img2,
@@ -37,9 +37,10 @@ export default function ProjectCard({ project, index }: { project: ProjectItem; 
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true }}
-            className="group relative rounded-xl overflow-hidden glass-card border-none h-full flex flex-col p-1"
+            className="group relative rounded-xl overflow-hidden glass-card border-none h-full flex flex-col p-1 cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onClick={onClick}
         >
             <div className={`relative w-full ${project.type === "mobile" ? "bg-gray-900 p-8 flex items-center justify-center min-h-[400px]" : "h-64 overflow-hidden"}`}>
 
@@ -132,23 +133,15 @@ export default function ProjectCard({ project, index }: { project: ProjectItem; 
                                     />
                                 ))}
                             </div>
-                            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 z-20">
+                            <div className="absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-center justify-center gap-4 z-20">
                                 {project.github && (
                                     <Link
                                         href={project.github}
                                         target="_blank"
                                         className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-white backdrop-blur-sm"
+                                        onClick={(e) => e.stopPropagation()}
                                     >
                                         <FiGithub size={20} />
-                                    </Link>
-                                )}
-                                {project.demo && (
-                                    <Link
-                                        href={project.demo}
-                                        target="_blank"
-                                        className="p-3 bg-primary rounded-full hover:bg-primary/80 transition-colors text-white shadow-lg shadow-primary/30"
-                                    >
-                                        <ExternalLink size={20} />
                                     </Link>
                                 )}
                             </div>
@@ -169,6 +162,7 @@ export default function ProjectCard({ project, index }: { project: ProjectItem; 
                                         href={project.github}
                                         target="_blank"
                                         className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-white backdrop-blur-sm"
+                                        onClick={(e) => e.stopPropagation()}
                                     >
                                         <FiGithub size={20} />
                                     </Link>
@@ -182,9 +176,9 @@ export default function ProjectCard({ project, index }: { project: ProjectItem; 
             <div className="p-6 flex-grow flex flex-col">
                 <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                     {project.titleLink ? (
-                        <Link href={project.titleLink} target="_blank">{project.title}</Link>
+                        <Link href={project.titleLink} target="_blank" onClick={(e) => e.stopPropagation()}>{project.title}</Link>
                     ) : (
-                        <Link href={project.demo!} target="_blank">{project.title}</Link>
+                        <Link href={project.demo!} target="_blank" onClick={(e) => e.stopPropagation()}>{project.title}</Link>
                     )}
                 </h3>
 
@@ -201,6 +195,7 @@ export default function ProjectCard({ project, index }: { project: ProjectItem; 
                         <button
                             onClick={(e) => {
                                 e.preventDefault();
+                                e.stopPropagation();
                                 setShowAllTags(true);
                             }}
                             className="text-xs px-2 py-1 rounded-md bg-white/5 border border-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-pointer"

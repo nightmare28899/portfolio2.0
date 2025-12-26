@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Layout, Server, Wrench, Code2, Cloud, Smartphone, Palette, Database } from "lucide-react";
+import { Layout, Server, Wrench, Code2, Cloud, Smartphone, Palette, Database, Users, Layers, Zap } from "lucide-react";
 import { SKILLS } from "@/lib/data";
 import { useLanguage } from "@/context/LanguageContext";
 import { getTechIcon } from "../ui/TechIcons";
@@ -12,22 +12,14 @@ export default function Skills() {
 
     const getCategoryColor = (category: string) => {
         switch (category) {
-            case "Frontend":
+            case "Core Expertise":
                 return "hover:border-primary hover:shadow-primary/50 hover:bg-primary/10";
-            case "Languages":
-                return "hover:border-secondary hover:shadow-secondary/50 hover:bg-secondary/10";
-            case "Backend":
-                return "hover:border-emerald-500 hover:shadow-emerald-500/50 hover:bg-emerald-500/10";
-            case "Tools":
-                return "hover:border-blue-500 hover:shadow-blue-500/50 hover:bg-blue-500/10";
-            case "Cloud & Infrastructure":
+            case "Engineering & Architecture":
                 return "hover:border-purple-500 hover:shadow-purple-500/50 hover:bg-purple-500/10";
-            case "Mobile":
+            case "Infrastructure & Tooling":
                 return "hover:border-amber-500 hover:shadow-amber-500/50 hover:bg-amber-500/10";
-            case "CSS & UI":
-                return "hover:border-pink-500 hover:shadow-pink-500/50 hover:bg-pink-500/10";
-            case "Databases":
-                return "hover:border-cyan-500 hover:shadow-cyan-500/50 hover:bg-cyan-500/10";
+            case "Team & Leadership":
+                return "hover:border-emerald-500 hover:shadow-emerald-500/50 hover:bg-emerald-500/10";
             default:
                 return "hover:border-white/20";
         }
@@ -35,22 +27,14 @@ export default function Skills() {
 
     const getCategoryIcon = (category: string) => {
         switch (category) {
-            case "Frontend":
-                return <Layout className="w-6 h-6" />;
-            case "Languages":
+            case "Core Expertise":
                 return <Code2 className="w-6 h-6" />;
-            case "Backend":
-                return <Server className="w-6 h-6" />;
-            case "Tools":
-                return <Wrench className="w-6 h-6" />;
-            case "Cloud & Infrastructure":
+            case "Engineering & Architecture":
+                return <Layers className="w-6 h-6" />;
+            case "Infrastructure & Tooling":
                 return <Cloud className="w-6 h-6" />;
-            case "Mobile":
-                return <Smartphone className="w-6 h-6" />;
-            case "CSS & UI":
-                return <Palette className="w-6 h-6" />;
-            case "Databases":
-                return <Database className="w-6 h-6" />;
+            case "Team & Leadership":
+                return <Users className="w-6 h-6" />;
             default:
                 return <Code2 className="w-6 h-6" />;
         }
@@ -101,10 +85,8 @@ export default function Skills() {
                                         <span className="text-xl">{getTechIcon(skill.name)}</span>
                                         <span className="font-medium text-white">{skill.name}</span>
                                         <span className="ml-2 text-xs text-gray-400 opacity-60">| {skill.level}</span>
-                                        {/* @ts-ignore */}
                                         {skill.description && (
-                                            <span className="hidden group-hover:block absolute -top-12 left-1/2 -translate-x-1/2 w-64 p-2 bg-black/90 text-white text-xs rounded border border-white/10 z-20 pointer-events-none">
-                                                {/* @ts-ignore */}
+                                            <span className="hidden group-hover:block absolute -top-24 left-1/2 -translate-x-1/2 w-64 p-3 bg-black/90 text-white text-xs rounded-lg border border-white/10 z-20 pointer-events-none shadow-xl">
                                                 {skill.description}
                                             </span>
                                         )}

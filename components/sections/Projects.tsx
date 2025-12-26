@@ -1,11 +1,15 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import ProjectCard from "@/components/ui/ProjectCard";
+import ProjectDetailModal from "@/components/ui/ProjectDetailModal";
 import { useLanguage } from "@/context/LanguageContext";
+import { ProjectItem } from "@/lib/types";
 
 export default function Projects() {
     const { t } = useLanguage();
+    const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
 
     return (
         <section id="projects" className="py-20 bg-black/20">
@@ -23,9 +27,23 @@ export default function Projects() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {t.projects.items.map((project, index) => (
-                        <ProjectCard key={project.id} project={project} index={index} />
+                        <ProjectCard
+                            key={project.id}
+                            project={project}
+                            index={index}
+                            onClick={() => setSelectedProject(project)}
+                        />
                     ))}
                 </div>
+
+                <AnimatePresence>
+                    {selectedProject && (
+                        <ProjectDetailModal
+                            project={selectedProject}
+                            onClose={() => setSelectedProject(null)}
+                        />
+                    )}
+                </AnimatePresence>
             </div>
         </section>
     );

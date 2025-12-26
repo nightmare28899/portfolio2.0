@@ -15,4 +15,15 @@ export interface ProjectItem {
     tags: string[];
     type: "mobile" | "web";
     titleLink?: string;
+    longDescription?: string;
+    role?: string;
+    responsibilities?: string[];
+    techStack?: string[];
+}
+
+export interface SkillItem {
+    name: string;
+    level: string;
+    category: string;
+    description: string;
 }
