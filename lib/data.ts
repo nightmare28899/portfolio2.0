@@ -178,9 +178,9 @@ export const DATA = {
             "Collaborated closely with backend teams to design efficient API data structures.",
             "Mentored junior developers and established code quality standards."
           ],
-          techStack: ["React Native", "TypeScript", "Styled Components", "Redux", "Axios", "AWS", "S3", "Architecture modular"],
+          techStack: ["React Native", "TypeScript", "Styled Components", "Redux", "Axios", "AWS", "S3", "Modular Architecture"],
           demo: "https://play.google.com/store/apps/details?id=com.clubamerica.redaguila_app&hl=es_MX",
-          tags: ["React Native", "TypeScript", "Styled Components", "Redux", "Axios", "AWS", "S3", "Architecture modular"],
+          tags: ["React Native", "TypeScript", "Styled Components", "Redux", "Axios", "AWS", "S3", "Modular Architecture"],
           type: "mobile",
           titleLink: "https://play.google.com/store/apps/details?id=com.clubamerica.redaguila_app&hl=es_MX",
         },
@@ -199,9 +199,9 @@ export const DATA = {
             "Created reusable UI components to ensure consistency across the government platform.",
             "Optimized data fetching strategies to handle large datasets efficiently."
           ],
-          techStack: ["React", "Material UI", "Redux Toolkit", "Chart.js", "Vite", "Axios", "Architecture modular"],
+          techStack: ["React", "Material UI", "Redux Toolkit", "Chart.js", "Vite", "Axios", "Modular Architecture"],
           demo: "https://www.ingresospropios.michoacan.gob.mx/",
-          tags: ["React", "Material UI", "Redux Toolkit", "Chart.js", "Vite", "Axios", "Architecture modular"],
+          tags: ["React", "Material UI", "Redux Toolkit", "Chart.js", "Vite", "Axios", "Modular Architecture"],
           type: "web",
         },
         {
@@ -331,8 +331,8 @@ export const DATA = {
             "Colaboré estrechamente con los equipos de backend para diseñar estructuras de datos de API eficientes.",
             "Mentoricé a desarrolladores junior y establecí estándares de calidad de código."
           ],
-          techStack: ["React Native", "TypeScript", "Styled Components", "Redux", "Axios", "AWS", "S3", "Architecture modular"],
-          tags: ["React Native", "TypeScript", "Styled Components", "Redux", "Axios", "AWS", "S3", "Architecture modular"],
+          techStack: ["React Native", "TypeScript", "Styled Components", "Redux", "Axios", "AWS", "S3", "Modular Architecture"],
+          tags: ["React Native", "TypeScript", "Styled Components", "Redux", "Axios", "AWS", "S3", "Modular Architecture"],
           type: "mobile",
           titleLink: "https://play.google.com/store/apps/details?id=com.clubamerica.redaguila_app&hl=es_MX",
         },
