@@ -247,7 +247,7 @@ export const DATA = {
     },
     techInfrastructure: {
       title: "Portfolio Technologies & Infrastructure",
-      subtitle: "Powered by modern tech and robust cloud infrastructure",
+      subtitle: "This portfolio is built on a production-ready architecture, prioritizing performance, scalability, and long-term maintainability. Every technology choice reflects a deliberate engineering decision to ensure reliability and global availability.",
       frontend: {
         title: "Modern Frontend",
         description: "Built for speed and user experience"
@@ -256,15 +256,19 @@ export const DATA = {
         title: "Cloud Infrastructure",
         description: "Scalable, secure, and globally distributed"
       },
+      domainManagement: {
+        title: "Domain & DNS Management",
+        description: "Ensuring high availability and secure routing for global access"
+      },
       items: {
-        nextjs: "Server-side rendering and static optimization",
-        tailwindcss: "Utility-first styling for rapid design",
-        typescript: "Type safety for robust code",
-        s3: "Highly durable asset storage",
-        cloudfront: "Low-latency global content delivery",
-        amplify: "Continuous deployment and automated CI/CD",
-        route53: "Reliable and scalable DNS management",
-        ionos: "Domain management and integration"
+        nextjs: "Hybrid rendering strategy (SSR/SSG) for optimal performance and SEO.",
+        tailwindcss: "Utility-first architecture for consistent, scalable design systems.",
+        typescript: "Strict type safety ensuring robust, maintainable codebases.",
+        s3: "Durable object storage for high-availability asset delivery.",
+        cloudfront: "Global content delivery network ensuring low-latency access.",
+        amplify: "Automated CI/CD pipelines for reliable, continuous deployment.",
+        route53: "Scalable DNS management for high-availability routing.",
+        ionos: "Domain management integration for seamless service configuration."
       }
     },
     footer: {
@@ -399,7 +403,7 @@ export const DATA = {
     },
     techInfrastructure: {
       title: "Portafolio Tecnológia e Infraestructura",
-      subtitle: "Impulsado por tecnologías modernas y una infraestructura en la nube robusta",
+      subtitle: "Este portafolio está construido sobre una arquitectura lista para producción, priorizando el rendimiento, la escalabilidad y la mantenibilidad a largo plazo. Cada elección tecnológica refleja una decisión de ingeniería deliberada para garantizar la fiabilidad y la disponibilidad global.",
       frontend: {
         title: "Frontend Moderno",
         description: "Construido para velocidad y experiencia de usuario"
@@ -408,15 +412,19 @@ export const DATA = {
         title: "Infraestructura Cloud",
         description: "Escalable, segura y distribuida globalmente"
       },
+      domainManagement: {
+        title: "Gestión de Dominios y DNS",
+        description: "Asegurando alta disponibilidad y enrutamiento seguro para acceso global"
+      },
       items: {
-        nextjs: "Renderizado del lado del servidor y optimización estática",
-        tailwindcss: "Estilos priorizando la utilidad para un diseño rápido",
-        typescript: "Seguridad de tipos para un código robusto",
-        s3: "Almacenamiento de activos altamente duradero",
-        cloudfront: "Entrega de contenido global de baja latencia",
-        amplify: "Despliegue continuo y CI/CD automatizado",
-        route53: "Gestión de DNS confiable y escalable",
-        ionos: "Gestión e integración de dominios"
+        nextjs: "Estrategia de renderizado híbrido (SSR/SSG) para un rendimiento y SEO óptimos.",
+        tailwindcss: "Arquitectura 'utility-first' para sistemas de diseño consistentes y escalables.",
+        typescript: "Seguridad de tipos estricta que garantiza bases de código robustas y mantenibles.",
+        s3: "Almacenamiento de objetos duradero para entrega de activos de alta disponibilidad.",
+        cloudfront: "Red de entrega de contenido global que asegura acceso de baja latencia.",
+        amplify: "Pipelines de CI/CD automatizados para despliegues continuos y fiables.",
+        route53: "Gestión de DNS escalable para enrutamiento de alta disponibilidad.",
+        ionos: "Integración de gestión de dominios para configuración de servicios fluida."
       }
     },
     footer: {

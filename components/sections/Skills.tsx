@@ -25,6 +25,21 @@ export default function Skills() {
         }
     };
 
+    const getCategoryTitleColor = (category: string) => {
+        switch (category) {
+            case "Core Expertise":
+                return "text-primary border-primary";
+            case "Engineering & Architecture":
+                return "text-purple-500 border-purple-500";
+            case "Infrastructure & Tooling":
+                return "text-amber-500 border-amber-500";
+            case "Team & Leadership":
+                return "text-emerald-500 border-emerald-500";
+            default:
+                return "text-primary border-primary";
+        }
+    };
+
     const getCategoryIcon = (category: string) => {
         switch (category) {
             case "Core Expertise":
@@ -64,7 +79,7 @@ export default function Skills() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.1 * catIndex }}
                                 viewport={{ once: true }}
-                                className="text-xl font-bold mb-6 text-primary border-l-4 border-primary pl-4 flex items-center gap-2"
+                                className={`text-xl font-bold mb-6 pl-4 border-l-4 flex items-center gap-2 ${getCategoryTitleColor(category)}`}
                             >
                                 {getCategoryIcon(category)}
                                 {category}

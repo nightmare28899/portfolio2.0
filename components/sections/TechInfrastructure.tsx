@@ -66,6 +66,9 @@ export default function TechInfrastructure() {
         }
     ];
 
+    const cloudInfraTech = infraTech.slice(0, 3);
+    const domainTech = infraTech.slice(3, 5);
+
     return (
         <section id="tech-infrastructure" className="py-20 relative overflow-hidden">
             <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
@@ -80,8 +83,8 @@ export default function TechInfrastructure() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl font-bold mb-4">{t.techInfrastructure.title}</h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">{t.techInfrastructure.subtitle}</p>
-                    <div className="w-20 h-1 bg-secondary mx-auto rounded-full mt-6" />
+                    <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">{t.techInfrastructure.subtitle}</p>
+                    <div className="w-20 h-1 bg-secondary mx-auto rounded-full mt-8" />
                 </motion.div>
 
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12">
@@ -104,7 +107,7 @@ export default function TechInfrastructure() {
                                     whileHover={{ scale: 1.02, x: 5 }}
                                     className={`group glass-card p-4 rounded-xl border border-white/5 transition-all duration-300 flex items-center gap-4 ${tech.color}`}
                                 >
-                                    <div className="p-3 bg-white/5 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                                    <div className="p-3 bg-white/5 rounded-lg group-hover:bg-white/10 transition-colors duration-300">
                                         {tech.icon}
                                     </div>
                                     <div>
@@ -129,14 +132,14 @@ export default function TechInfrastructure() {
                         <p className="text-gray-400 mb-8">{t.techInfrastructure.infrastructure.description}</p>
 
                         <div className="grid sm:grid-cols-2 gap-4">
-                            {infraTech.map((tech, index) => (
+                            {cloudInfraTech.map((tech, index) => (
                                 <motion.div
                                     key={tech.name}
                                     whileHover={{ y: -5 }}
-                                    className={`group glass-card p-4 rounded-xl border border-white/5 transition-all duration-300 ${tech.color} ${index === infraTech.length - 1 ? "sm:col-span-2" : ""}`}
+                                    className={`group glass-card p-4 rounded-xl border border-white/5 transition-all duration-300 ${tech.color} ${index === cloudInfraTech.length - 1 ? "sm:col-span-2" : ""}`}
                                 >
                                     <div className="flex items-center gap-3 mb-3">
-                                        <div className="p-2 bg-white/5 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                                        <div className="p-2 bg-white/5 rounded-lg group-hover:bg-white/10 transition-colors duration-300">
                                             {tech.name === "AWS S3" || tech.name === "CloudFront" || tech.name === "AWS Amplify" || tech.name === "Route 53" ? tech.icon2 : tech.icon}
                                         </div>
                                         <h4 className="font-bold text-white group-hover:text-secondary transition-colors">{tech.name}</h4>
@@ -144,6 +147,32 @@ export default function TechInfrastructure() {
                                     <p className="text-xs text-gray-400 leading-relaxed">{tech.desc}</p>
                                 </motion.div>
                             ))}
+                        </div>
+
+                        <div className="mt-10">
+                            <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-white">
+                                <Globe className="text-emerald-500" />
+                                {t.techInfrastructure.domainManagement.title}
+                            </h3>
+                            <p className="text-gray-400 mb-8">{t.techInfrastructure.domainManagement.description}</p>
+
+                            <div className="grid sm:grid-cols-2 gap-4">
+                                {domainTech.map((tech, index) => (
+                                    <motion.div
+                                        key={tech.name}
+                                        whileHover={{ y: -5 }}
+                                        className={`group glass-card p-4 rounded-xl border border-white/5 transition-all duration-300 ${tech.color}`}
+                                    >
+                                        <div className="flex items-center gap-3 mb-3">
+                                            <div className="p-2 bg-white/5 rounded-lg group-hover:bg-white/10 transition-colors duration-300">
+                                                {tech.name === "AWS S3" || tech.name === "CloudFront" || tech.name === "AWS Amplify" || tech.name === "Route 53" ? tech.icon2 : tech.icon}
+                                            </div>
+                                            <h4 className="font-bold text-white group-hover:text-secondary transition-colors">{tech.name}</h4>
+                                        </div>
+                                        <p className="text-xs text-gray-400 leading-relaxed">{tech.desc}</p>
+                                    </motion.div>
+                                ))}
+                            </div>
                         </div>
                     </motion.div>
                 </div>
