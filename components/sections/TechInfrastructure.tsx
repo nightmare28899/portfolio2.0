@@ -56,13 +56,13 @@ export default function TechInfrastructure() {
             icon2: <Server className="w-8 h-8 md:w-10 md:h-10 text-[#FF9900]" />,
             name: "Route 53",
             desc: t.techInfrastructure.items.route53,
-            color: "group-hover:shadow-[#FF9900]/20 group-hover:bg-[#FF9900]/5 group-hover:border-[#FF9900]/20"
+            color: "group-hover:shadow-[#10B981]/20 group-hover:bg-[#10B981]/5 group-hover:border-[#10B981]/20"
         },
         {
             icon: <SiIonos className="w-8 h-8 md:w-10 md:h-10 text-[#003D8F]" />,
             name: "IONOS",
             desc: t.techInfrastructure.items.ionos,
-            color: "group-hover:shadow-[#003D8F]/20 group-hover:bg-[#003D8F]/5 group-hover:border-[#003D8F]/20"
+            color: "group-hover:shadow-[#10B981]/20 group-hover:bg-[#10B981]/5 group-hover:border-[#10B981]/20"
         }
     ];
 
@@ -167,7 +167,7 @@ export default function TechInfrastructure() {
                                             <div className="p-2 bg-white/5 rounded-lg group-hover:bg-white/10 transition-colors duration-300">
                                                 {tech.name === "AWS S3" || tech.name === "CloudFront" || tech.name === "AWS Amplify" || tech.name === "Route 53" ? tech.icon2 : tech.icon}
                                             </div>
-                                            <h4 className="font-bold text-white group-hover:text-secondary transition-colors">{tech.name}</h4>
+                                            <h4 className="font-bold text-white group-hover:text-emerald-500 transition-colors">{tech.name}</h4>
                                         </div>
                                         <p className="text-xs text-gray-400 leading-relaxed">{tech.desc}</p>
                                     </motion.div>
