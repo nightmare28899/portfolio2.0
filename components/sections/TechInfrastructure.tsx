@@ -101,7 +101,7 @@ export default function TechInfrastructure() {
                         <p className="text-gray-400 mb-8">{t.techInfrastructure.frontend.description}</p>
 
                         <div className="space-y-4">
-                            {frontendTech.map((tech, index) => (
+                            {frontendTech.map((tech) => (
                                 <motion.div
                                     key={tech.name}
                                     whileHover={{ scale: 1.02, x: 5 }}
@@ -157,7 +157,7 @@ export default function TechInfrastructure() {
                             <p className="text-gray-400 mb-8">{t.techInfrastructure.domainManagement.description}</p>
 
                             <div className="grid sm:grid-cols-2 gap-4">
-                                {domainTech.map((tech, index) => (
+                                {domainTech.map((tech) => (
                                     <motion.div
                                         key={tech.name}
                                         whileHover={{ y: -5 }}

@@ -15,7 +15,7 @@ export function useActiveSection(sectionIds: string[]) {
                 });
             },
             {
-                rootMargin: "-50% 0px -50% 0px", // Trigger when the section is in the middle of the viewport
+                rootMargin: "-50% 0px -50% 0px",
             }
         );
 

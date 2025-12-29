@@ -23,7 +23,6 @@ export interface ProjectItem {
 
 export interface SkillItem {
     name: string;
-
     category: string;
     description: string;
 }

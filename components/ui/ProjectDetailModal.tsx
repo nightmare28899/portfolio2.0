@@ -67,7 +67,7 @@ export default function ProjectDetailModal({ project, onClose }: ProjectDetailMo
                 </button>
 
                 <div className="w-full md:w-1/2 bg-black/40 relative flex flex-col">
-                    <div className="relative flex-grow min-h-[300px] md:min-h-[400px]">
+                    <div className="relative grow min-h-[300px] md:min-h-[400px]">
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={currentImageIndex}
@@ -112,7 +112,7 @@ export default function ProjectDetailModal({ project, onClose }: ProjectDetailMo
                                 <button
                                     key={idx}
                                     onClick={() => setCurrentImageIndex(idx)}
-                                    className={`relative w-16 h-12 rounded-md overflow-hidden flex-shrink-0 border-2 transition-colors ${idx === currentImageIndex ? 'border-primary' : 'border-transparent opacity-50 hover:opacity-100'}`}
+                                    className={`relative w-16 h-12 rounded-md overflow-hidden shrink-0 border-2 transition-colors ${idx === currentImageIndex ? 'border-primary' : 'border-transparent opacity-50 hover:opacity-100'}`}
                                 >
                                     <Image
                                         src={img}
@@ -187,7 +187,7 @@ export default function ProjectDetailModal({ project, onClose }: ProjectDetailMo
                                 <ul className="space-y-2">
                                     {project.responsibilities.map((item, idx) => (
                                         <li key={idx} className="flex items-start gap-2">
-                                            <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 flex-shrink-0" />
+                                            <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
                                             <span>{item}</span>
                                         </li>
                                     ))}

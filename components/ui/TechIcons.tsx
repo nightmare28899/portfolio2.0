@@ -26,7 +26,7 @@ import {
     SiNodedotjs,
     SiPostgresql,
 } from "react-icons/si";
-import { Code2, Box, Database, Layers, Zap, Globe, Users, CheckCircle, Repeat, Smartphone, Server } from "lucide-react";
+import { Code2, Box, Database, Layers, Zap, Globe, Users, CheckCircle, Repeat, Smartphone } from "lucide-react";
 
 export const getTechIcon = (tag: string) => {
     // Normalize string to lowercase for easier matching

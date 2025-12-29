@@ -8,16 +8,15 @@ import Contact from "@/components/sections/Contact";
 import Footer from "@/components/globals/Footer";
 
 export default function Home() {
-  return (
-    <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <TechInfrastructure />
-
-      <Contact />
-      <Footer />
-    </main>
-  );
+    return (
+        <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
+            <Hero/>
+            <About/>
+            <Skills/>
+            <Projects/>
+            <TechInfrastructure/>
+            <Contact/>
+            <Footer/>
+        </main>
+    );
 }

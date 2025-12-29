@@ -25,99 +25,6 @@ export const PERSONAL_INFO = {
   resumeEs: assetUrl("cv/CV_KLG_SPANISH.pdf"),
 };
 
-export const SKILLS: SkillItem[] = [
-  {
-    name: "React",
-
-    category: "Core Expertise",
-    description: "Advanced component composition, custom hooks, and state management patterns for large-scale applications."
-  },
-  {
-    name: "Next.js",
-
-    category: "Core Expertise",
-    description: "Building performance-critical web apps with SSR, ISR, and App Router architecture."
-  },
-  {
-    name: "TypeScript",
-
-    category: "Core Expertise",
-    description: "Enforcing strict type safety to improve code reliability and developer experience in complex codebases."
-  },
-  {
-    name: "JavaScript",
-
-    category: "Core Expertise",
-    description: "Deep understanding of the event loop, async programming, and modern ES6+ features."
-  },
-  {
-    name: "Tailwind CSS",
-
-    category: "Core Expertise",
-    description: "Architecting responsive, scalable design systems with utility-first CSS."
-  },
-  {
-    name: "Clean Architecture",
-
-    category: "Engineering & Architecture",
-    description: "Designing modular, maintainable codebases using SOLID principles and layered architecture."
-  },
-  {
-    name: "Performance",
-
-    category: "Engineering & Architecture",
-    description: "Optimizing Core Web Vitals, bundle size, and ensuring 60fps rendering performance."
-  },
-  {
-    name: "REST & GraphQL",
-
-    category: "Engineering & Architecture",
-    description: "Designing and consuming efficient APIs for seamless data layering."
-  },
-  {
-    name: "Mobile Dev",
-
-    category: "Engineering & Architecture",
-    description: "Cross-platform mobile development with React Native, Ionic, and Capacitor."
-  },
-  {
-    name: "AWS",
-
-    category: "Infrastructure & Tooling",
-    description: "Cloud-native deployment using S3, CloudFront, Amplify, and Route53 for global scale."
-  },
-  {
-    name: "Docker",
-
-    category: "Infrastructure & Tooling",
-    description: "Containerizing applications for consistent development, testing, and production environments."
-  },
-  {
-    name: "CI/CD",
-
-    category: "Infrastructure & Tooling",
-    description: "Automating testing and deployment pipelines to ensure reliable delivery."
-  },
-  {
-    name: "Tech Leadership",
-
-    category: "Team & Leadership",
-    description: "Leading frontend initiatives, architectural decision-making, and driving technical standards."
-  },
-  {
-    name: "Code Review",
-
-    category: "Team & Leadership",
-    description: "Ensuring code quality, preventing regression, and mentoring team members through reviews."
-  },
-  {
-    name: "Agile Process",
-
-    category: "Team & Leadership",
-    description: "Streamlining development workflows and collaborating in fast-paced Scrum environments."
-  },
-];
-
 export const DATA = {
   en: {
     navbar: {
@@ -151,7 +58,94 @@ export const DATA = {
       trusted: "Trusted by Innovative Teams"
     },
     skills: {
-      title: "Skills & Tech Stack"
+      title: "Skills & Tech Stack",
+      items: [
+        {
+          name: "React",
+          category: "Core Expertise",
+          description: "Advanced component composition, custom hooks, and state management patterns for large-scale applications."
+        },
+        {
+          name: "Next.js",
+          category: "Core Expertise",
+          description: "Building performance-critical web apps with SSR, ISR, and App Router architecture."
+        },
+        {
+          name: "TypeScript",
+          category: "Core Expertise",
+          description: "Enforcing strict type safety to improve code reliability and developer experience in complex codebases."
+        },
+        {
+          name: "JavaScript",
+          category: "Core Expertise",
+          description: "Deep understanding of the event loop, async programming, and modern ES6+ features."
+        },
+        {
+          name: "Tailwind CSS",
+          category: "Core Expertise",
+          description: "Architecting responsive, scalable design systems with utility-first CSS."
+        },
+        {
+          name: "CSS",
+          category: "Core Expertise",
+          description: "Advanced CSS techniques for customizing component styles and layout."
+        },
+        {
+          name: "Ant-design",
+          category: "Core Expertise",
+          description: "Designing accessible, responsive, and consistent user interfaces with a component library."
+        },
+        {
+          name: "Clean Architecture",
+          category: "Engineering & Architecture",
+          description: "Designing modular, maintainable codebases using SOLID principles and layered architecture."
+        },
+        {
+          name: "Performance",
+          category: "Engineering & Architecture",
+          description: "Optimizing Core Web Vitals, bundle size, and ensuring 60fps rendering performance."
+        },
+        {
+          name: "REST & GraphQL",
+          category: "Engineering & Architecture",
+          description: "Designing and consuming efficient APIs for seamless data layering."
+        },
+        {
+          name: "Mobile Dev",
+          category: "Engineering & Architecture",
+          description: "Cross-platform mobile development with React Native, Ionic, and Capacitor."
+        },
+        {
+          name: "AWS",
+          category: "Infrastructure & Tooling",
+          description: "Cloud-native deployment using S3, CloudFront, Amplify, and Route53 for global scale."
+        },
+        {
+          name: "Docker",
+          category: "Infrastructure & Tooling",
+          description: "Containerizing applications for consistent development, testing, and production environments."
+        },
+        {
+          name: "CI/CD",
+          category: "Infrastructure & Tooling",
+          description: "Automating testing and deployment pipelines to ensure reliable delivery."
+        },
+        {
+          name: "Tech Leadership",
+          category: "Team & Leadership",
+          description: "Leading frontend initiatives, architectural decision-making, and driving technical standards."
+        },
+        {
+          name: "Code Review",
+          category: "Team & Leadership",
+          description: "Ensuring code quality, preventing regression, and mentoring team members through reviews."
+        },
+        {
+          name: "Agile Process",
+          category: "Team & Leadership",
+          description: "Streamlining development workflows and collaborating in fast-paced Scrum environments."
+        },
+      ] as SkillItem[]
     },
     projects: {
       title: "Featured Projects",
@@ -178,9 +172,9 @@ export const DATA = {
             "Collaborated closely with backend teams to design efficient API data structures.",
             "Mentored junior developers and established code quality standards."
           ],
-          techStack: ["React Native", "TypeScript", "Styled Components", "Redux", "Axios", "AWS", "S3", "Modular Architecture"],
+          techStack: ["React Native", "TypeScript", "Styled Components", "Redux Toolkit", "Axios", "AWS", "S3", "Modular Architecture"],
           demo: "https://play.google.com/store/apps/details?id=com.clubamerica.redaguila_app&hl=es_MX",
-          tags: ["React Native", "TypeScript", "Styled Components", "Redux", "Axios", "AWS", "S3", "Modular Architecture"],
+          tags: ["React Native", "TypeScript", "Styled Components", "Redux Toolkit", "Axios", "AWS", "S3", "Modular Architecture"],
           type: "mobile",
           titleLink: "https://play.google.com/store/apps/details?id=com.clubamerica.redaguila_app&hl=es_MX",
         },
@@ -199,9 +193,9 @@ export const DATA = {
             "Created reusable UI components to ensure consistency across the government platform.",
             "Optimized data fetching strategies to handle large datasets efficiently."
           ],
-          techStack: ["React", "Material UI", "Redux Toolkit", "Chart.js", "Vite", "Axios", "Modular Architecture"],
+          techStack: ["React", "Material UI", "Redux", "Chart.js", "Vite", "Axios", "Modular Architecture"],
           demo: "https://www.ingresospropios.michoacan.gob.mx/",
-          tags: ["React", "Material UI", "Redux Toolkit", "Chart.js", "Vite", "Axios", "Modular Architecture"],
+          tags: ["React", "Material UI", "Redux", "Chart.js", "Vite", "Axios", "Modular Architecture"],
           type: "web",
         },
         {
@@ -308,7 +302,94 @@ export const DATA = {
       trusted: "Con la confianza de equipos innovadores"
     },
     skills: {
-      title: "Habilidades y Tecnologías"
+      title: "Habilidades y Tecnologías",
+      items: [
+        {
+          name: "React",
+          category: "Experiencia Principal",
+          description: "Composición avanzada de componentes, hooks personalizados y patrones de gestión de estado para aplicaciones a gran escala."
+        },
+        {
+          name: "Next.js",
+          category: "Experiencia Principal",
+          description: "Construcción de aplicaciones web de rendimiento crítico con SSR, ISR y arquitectura App Router."
+        },
+        {
+          name: "TypeScript",
+          category: "Experiencia Principal",
+          description: "Aplicación de seguridad de tipos estricta para mejorar la fiabilidad del código y la experiencia del desarrollador en bases de código complejas."
+        },
+        {
+          name: "JavaScript",
+          category: "Experiencia Principal",
+          description: "Profundo entendimiento del event loop, programación asíncrona y características modernas de ES6+."
+        },
+        {
+          name: "Tailwind CSS",
+          category: "Experiencia Principal",
+          description: "Arquitectura de sistemas de diseño responsivos y escalables con CSS de utilidad primero."
+        },
+        {
+          name: "CSS",
+          category: "Experiencia Principal",
+          description: "Técnicas avanzadas de CSS para personalizar estilos y maquetación de componentes."
+        },
+        {
+          name: "Ant-design",
+          category: "Experiencia Principal",
+          description: "Diseño de interfaces de usuario accesibles, responsivas y consistentes con una biblioteca de componentes."
+        },
+        {
+          name: "Clean Architecture",
+          category: "Ingeniería y Arquitectura",
+          description: "Diseño de bases de código modulares y mantenibles utilizando principios SOLID y arquitectura por capas."
+        },
+        {
+          name: "Performance",
+          category: "Ingeniería y Arquitectura",
+          description: "Optimización de Core Web Vitals, tamaño del bundle y aseguramiento de rendimiento de renderizado a 60fps."
+        },
+        {
+          name: "REST & GraphQL",
+          category: "Ingeniería y Arquitectura",
+          description: "Diseño y consumo de APIs eficientes para una capa de datos fluida."
+        },
+        {
+          name: "Mobile Dev",
+          category: "Ingeniería y Arquitectura",
+          description: "Desarrollo móvil multiplataforma con React Native, Ionic y Capacitor."
+        },
+        {
+          name: "AWS",
+          category: "Infraestructura y Herramientas",
+          description: "Despliegue nativo en la nube usando S3, CloudFront, Amplify y Route53 para escala global."
+        },
+        {
+          name: "Docker",
+          category: "Infraestructura y Herramientas",
+          description: "Contenerización de aplicaciones para entornos consistentes de desarrollo, pruebas y producción."
+        },
+        {
+          name: "CI/CD",
+          category: "Infraestructura y Herramientas",
+          description: "Automatización de pipelines de pruebas y despliegue para asegurar entregas fiables."
+        },
+        {
+          name: "Technical Leadership",
+          category: "Equipo y Liderazgo",
+          description: "Liderazgo de iniciativas frontend, toma de decisiones arquitectónicas e impulso de estándares técnicos."
+        },
+        {
+          name: "Code Review",
+          category: "Equipo y Liderazgo",
+          description: "Aseguramiento de calidad de código, prevención de regresiones y mentoría a miembros del equipo mediante revisiones."
+        },
+        {
+          name: "Agile Process",
+          category: "Equipo y Liderazgo",
+          description: "Optimización de flujos de desarrollo y colaboración en entornos Scrum de ritmo rápido."
+        },
+      ] as SkillItem[]
     },
     projects: {
       title: "Proyectos Destacados",

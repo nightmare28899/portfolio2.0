@@ -4,12 +4,11 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink } from "lucide-react";
 import { FiGithub } from "react-icons/fi";
 import { type ProjectItem } from "@/lib/types";
 import { getTechIcon } from "./TechIcons";
 
-export default function ProjectCard({ project, index, onClick }: { project: ProjectItem; index: number; onClick: () => void }) {
+export default function ProjectCard({ project, index, onClickAction }: { project: ProjectItem; index: number; onClickAction: () => void }) {
     const images = [
         project.img,
         project.img2,
@@ -40,16 +39,16 @@ export default function ProjectCard({ project, index, onClick }: { project: Proj
             className="group relative rounded-xl overflow-hidden glass-card border-none h-full flex flex-col p-1 cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            onClick={onClick}
+            onClick={onClickAction}
         >
             <div className={`relative w-full ${project.type === "mobile" ? "bg-gray-900 p-8 flex items-center justify-center min-h-[400px]" : "h-64 overflow-hidden"}`}>
 
                 {project.type === "mobile" ? (
                     images.length > 1 ? (
-                        <div className="relative w-[200px] h-[350px] border-gray-800 bg-gray-800 border-[8px] rounded-[2rem] shadow-xl">
-                            <div className="w-[60px] h-[10px] bg-gray-800 absolute top-0 left-1/2 -translate-x-1/2 rounded-b-xl z-20"></div>
+                        <div className="relative w-[200px] h-[350px] border-gray-800 bg-gray-800 border-8 rounded-4xl shadow-xl">
+                            <div className="w-[60px] h-2.5 bg-gray-800 absolute top-0 left-1/2 -translate-x-1/2 rounded-b-xl z-20"></div>
 
-                            <div className="h-[334px] w-full overflow-hidden rounded-[1.5rem] bg-white relative">
+                            <div className="h-[334px] w-full overflow-hidden rounded-3xl bg-white relative">
                                 <AnimatePresence mode="wait">
                                     <motion.div
                                         key={currentImageIndex}
@@ -81,14 +80,14 @@ export default function ProjectCard({ project, index, onClick }: { project: Proj
                                 </div>
                             </div>
 
-                            <div className="absolute -left-[10px] top-[80px] w-[2px] h-[30px] bg-gray-700 rounded-l-md"></div>
-                            <div className="absolute -left-[10px] top-[120px] w-[2px] h-[30px] bg-gray-700 rounded-l-md"></div>
-                            <div className="absolute -right-[10px] top-[100px] w-[2px] h-[40px] bg-gray-700 rounded-r-md"></div>
+                            <div className="absolute -left-2.5 top-20 w-0.5 h-[30px] bg-gray-700 rounded-l-md"></div>
+                            <div className="absolute -left-2.5 top-[120px] w-0.5 h-[30px] bg-gray-700 rounded-l-md"></div>
+                            <div className="absolute -right-2.5 top-[100px] w-0.5 h-10 bg-gray-700 rounded-r-md"></div>
                         </div>
                     ) : (
-                        <div className="relative w-[200px] h-[350px] border-gray-800 bg-gray-800 border-[8px] rounded-[2rem] shadow-xl">
-                            <div className="w-[60px] h-[10px] bg-gray-800 absolute top-0 left-1/2 -translate-x-1/2 rounded-b-xl z-20"></div>
-                            <div className="h-[334px] w-full overflow-hidden rounded-[1.5rem] bg-white relative">
+                        <div className="relative w-[200px] h-[350px] border-gray-800 bg-gray-800 border-8 rounded-4xl shadow-xl">
+                            <div className="w-[60px] h-2.5 bg-gray-800 absolute top-0 left-1/2 -translate-x-1/2 rounded-b-xl z-20"></div>
+                            <div className="h-[334px] w-full overflow-hidden rounded-3xl bg-white relative">
                                 <Image
                                     src={project.img}
                                     alt={project.title}
@@ -97,9 +96,9 @@ export default function ProjectCard({ project, index, onClick }: { project: Proj
                                     className="object-cover"
                                 />
                             </div>
-                            <div className="absolute -left-[10px] top-[80px] w-[2px] h-[30px] bg-gray-700 rounded-l-md"></div>
-                            <div className="absolute -left-[10px] top-[120px] w-[2px] h-[30px] bg-gray-700 rounded-l-md"></div>
-                            <div className="absolute -right-[10px] top-[100px] w-[2px] h-[40px] bg-gray-700 rounded-r-md"></div>
+                            <div className="absolute -left-2.5 top-20 w-0.5 h-[30px] bg-gray-700 rounded-l-md"></div>
+                            <div className="absolute -left-2.5 top-[120px] w-0.5 h-[30px] bg-gray-700 rounded-l-md"></div>
+                            <div className="absolute -right-2.5 top-[100px] w-0.5 h-10 bg-gray-700 rounded-r-md"></div>
                         </div>
                     )
                 ) : (
@@ -173,7 +172,7 @@ export default function ProjectCard({ project, index, onClick }: { project: Proj
                 )}
             </div>
 
-            <div className="p-6 flex-grow flex flex-col">
+            <div className="p-6 grow flex flex-col">
                 <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                     {project.titleLink ? (
                         <Link href={project.titleLink} target="_blank" onClick={(e) => e.stopPropagation()}>{project.title}</Link>

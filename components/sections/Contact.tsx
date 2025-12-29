@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Send, CheckCircle, AlertCircle } from "lucide-react";
 import { SOCIALS } from "@/lib/socials";
 import { useLanguage } from "@/context/LanguageContext";
-import emailjs from "emailjs-com";
+import emails from "emailjs-com";
 
 export default function Contact() {
     const { t } = useLanguage();
@@ -19,7 +19,7 @@ export default function Contact() {
         if (!form.current) return;
 
         try {
-            await emailjs.sendForm(
+            await emails.sendForm(
                 process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
                 process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
                 form.current,
@@ -36,7 +36,7 @@ export default function Contact() {
 
     return (
         <section id="contact" className="py-20 relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-b from-transparent to-black/50 pointer-events-none" />
 
             <div className="container mx-auto px-6 relative z-10">
                 <motion.div

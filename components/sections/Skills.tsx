@@ -1,24 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Layout, Server, Wrench, Code2, Cloud, Smartphone, Palette, Database, Users, Layers, Zap } from "lucide-react";
-import { SKILLS } from "@/lib/data";
+import { Code2, Cloud, Users, Layers } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { getTechIcon } from "../ui/TechIcons";
 
 export default function Skills() {
     const { t } = useLanguage();
-    const categories = Array.from(new Set(SKILLS.map((s) => s.category)));
+    // Use t.skills.items from the translation context
+    const skillsList = t.skills.items || [];
+    const categories = Array.from(new Set(skillsList.map((s) => s.category)));
 
     const getCategoryColor = (category: string) => {
         switch (category) {
             case "Core Expertise":
+            case "Experiencia Principal":
                 return "hover:border-primary hover:shadow-primary/50 hover:bg-primary/10";
             case "Engineering & Architecture":
+            case "Ingeniería y Arquitectura":
                 return "hover:border-purple-500 hover:shadow-purple-500/50 hover:bg-purple-500/10";
             case "Infrastructure & Tooling":
+            case "Infraestructura y Herramientas":
                 return "hover:border-amber-500 hover:shadow-amber-500/50 hover:bg-amber-500/10";
             case "Team & Leadership":
+            case "Equipo y Liderazgo":
                 return "hover:border-emerald-500 hover:shadow-emerald-500/50 hover:bg-emerald-500/10";
             default:
                 return "hover:border-white/20";
@@ -28,12 +33,16 @@ export default function Skills() {
     const getCategoryTitleColor = (category: string) => {
         switch (category) {
             case "Core Expertise":
+            case "Experiencia Principal":
                 return "text-primary border-primary";
             case "Engineering & Architecture":
+            case "Ingeniería y Arquitectura":
                 return "text-purple-500 border-purple-500";
             case "Infrastructure & Tooling":
+            case "Infraestructura y Herramientas":
                 return "text-amber-500 border-amber-500";
             case "Team & Leadership":
+            case "Equipo y Liderazgo":
                 return "text-emerald-500 border-emerald-500";
             default:
                 return "text-primary border-primary";
@@ -43,12 +52,16 @@ export default function Skills() {
     const getCategoryIcon = (category: string) => {
         switch (category) {
             case "Core Expertise":
+            case "Experiencia Principal":
                 return <Code2 className="w-6 h-6" />;
             case "Engineering & Architecture":
+            case "Ingeniería y Arquitectura":
                 return <Layers className="w-6 h-6" />;
             case "Infrastructure & Tooling":
+            case "Infraestructura y Herramientas":
                 return <Cloud className="w-6 h-6" />;
             case "Team & Leadership":
+            case "Equipo y Liderazgo":
                 return <Users className="w-6 h-6" />;
             default:
                 return <Code2 className="w-6 h-6" />;
@@ -86,7 +99,7 @@ export default function Skills() {
                             </motion.h3>
 
                             <div className="flex flex-wrap gap-4">
-                                {SKILLS.filter(s => s.category === category).map((skill, index) => (
+                                {skillsList.filter((s) => s.category === category).map((skill) => (
                                     <motion.div
                                         key={skill.name}
                                         initial={{ opacity: 0, scale: 0.8 }}
@@ -95,7 +108,7 @@ export default function Skills() {
                                         whileTap={{ scale: 0.95 }}
                                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
                                         viewport={{ once: true }}
-                                        className={`glass-card group relative px-6 py-3 rounded-full transition-all duration-300 cursor-default border border-white/5 cursor-pointer shadow-lg hover:shadow-xl ${getCategoryColor(skill.category)} flex items-center gap-2`}
+                                        className={`glass-card group relative px-6 py-3 rounded-full transition-all duration-300 cursor-default border border-white/5 shadow-lg hover:shadow-xl ${getCategoryColor(skill.category)} flex items-center gap-2`}
                                     >
                                         <span className="text-xl">{getTechIcon(skill.name)}</span>
                                         <span className="font-medium text-white">{skill.name}</span>

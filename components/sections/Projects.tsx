@@ -31,7 +31,7 @@ export default function Projects() {
                             key={project.id}
                             project={project}
                             index={index}
-                            onClick={() => setSelectedProject(project)}
+                            onClickAction={() => setSelectedProject(project)}
                         />
                     ))}
                 </div>

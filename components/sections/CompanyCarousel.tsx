@@ -14,8 +14,8 @@ export default function CompanyCarousel() {
             </div>
 
             <div className="relative flex w-full overflow-hidden mask-linear-fade">
-                <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
-                <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
+                <div className="absolute left-0 top-0 bottom-0 w-20 bg-linear-to-r from-background to-transparent z-10" />
+                <div className="absolute right-0 top-0 bottom-0 w-20 bg-linear-to-l from-background to-transparent z-10" />
 
                 <motion.div
                     className="flex gap-12 items-center flex-nowrap"
@@ -32,7 +32,7 @@ export default function CompanyCarousel() {
                     {[...COMPANIES, ...COMPANIES, ...COMPANIES].map((company, index) => (
                         <div
                             key={`${company.name}-${index}`}
-                            className="relative w-40 h-20 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 flex-shrink-0 flex items-center justify-center p-4"
+                            className="relative w-40 h-20 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 shrink-0 flex items-center justify-center p-4"
                         >
                             <Image
                                 src={company.logo}

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { motion } from "framer-motion";
 import { User, MapPin, Mail, Briefcase } from "lucide-react";
 import { PERSONAL_INFO } from "@/lib/data";
@@ -80,9 +82,11 @@ export default function About() {
                         <div className="relative z-10 glass-card p-8 rounded-2xl border border-white/5">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary/20">
-                                    <img
+                                    <Image
                                         src={PERSONAL_INFO.profileImage}
                                         alt={PERSONAL_INFO.name}
+                                        width={80}
+                                        height={80}
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
@@ -101,8 +105,8 @@ export default function About() {
                             </div>
                         </div>
 
-                        <div className="absolute top-[-20px] right-[-20px] w-24 h-24 bg-primary/20 rounded-full blur-2xl -z-10" />
-                        <div className="absolute bottom-[-20px] left-[-20px] w-32 h-32 bg-secondary/20 rounded-full blur-2xl -z-10" />
+                        <div className="absolute -top-5 -right-5 w-24 h-24 bg-primary/20 rounded-full blur-2xl -z-10" />
+                        <div className="absolute -bottom-5 -left-5 w-32 h-32 bg-secondary/20 rounded-full blur-2xl -z-10" />
                     </motion.div>
                 </div>
             </div>

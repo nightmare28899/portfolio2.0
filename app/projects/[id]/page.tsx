@@ -5,14 +5,12 @@ import { FiGithub } from "react-icons/fi";
 import { DATA } from "@/lib/data";
 
 export function generateStaticParams() {
-    const projectIds = DATA.en.projects.items.map((project) => ({
+    return DATA.en.projects.items.map((project) => ({
         id: project.id.toString(),
     }));
-    return projectIds;
 }
 
 const ProjectDetail = ({ params }: { params: { id: string } }) => {
-    // Default to English for static generation
     const t = DATA.en;
     const id = params.id;
     const project = t.projects.items.find((p) => p.id === Number(id));
