@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
+const isDocker = process.env.BUILD_MODE === 'docker';
+
 const nextConfig = {
-  output: "export",
-  images: { unoptimized: true },
+  output: isDocker ? 'standalone' : 'export',
+
+  images: {
+    unoptimized: !isDocker,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
