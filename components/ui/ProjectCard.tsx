@@ -21,6 +21,9 @@ export default function ProjectCard({ project, index, onClickAction }: { project
     const [isHovered, setIsHovered] = useState(false);
     const [showAllTags, setShowAllTags] = useState(false);
     const projectTitleHref = project.titleLink ?? project.demo ?? project.github;
+    const projectCardDescription = project.type === "web"
+        ? project.longDescription ?? project.description
+        : project.description;
 
     useEffect(() => {
         if (!isHovered && images.length > 1) {
@@ -182,7 +185,9 @@ export default function ProjectCard({ project, index, onClickAction }: { project
                     )}
                 </h3>
 
-                <p className="text-gray-400 text-sm mb-4 line-clamp-3">{project.description}</p>
+                <p className={`text-gray-400 text-sm mb-4 ${project.type === "web" ? "line-clamp-6" : "line-clamp-3"}`}>
+                    {projectCardDescription}
+                </p>
 
                 <div className="flex flex-wrap gap-2 mt-auto">
                     {(showAllTags ? project.tags : project.tags.slice(0, 3)).map((tag) => (
