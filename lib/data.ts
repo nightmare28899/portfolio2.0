@@ -199,6 +199,26 @@ export const DATA = {
           type: "web",
         },
         {
+          id: 4,
+          img: assetUrl("images/government/data-datos-gratis/d4ta-login.png"),
+          img2: assetUrl("images/government/data-datos-gratis/d4ta-dashboard.png"),
+          title: "D4TA - Datos Gratis",
+          description: "Government digital platform that manages student applications for a free monthly 4 GB connectivity benefit, validating each request with CURP and school enrollment data.",
+          longDescription: "D4TA - Datos Gratis is a government initiative focused on closing the digital gap for students by granting a free 4 GB monthly data package for personal use. The platform validates each application using CURP and school enrollment ID (matrícula), then routes it to the corresponding institution for review. After applying, each student receives a unique key to share with their institution director so the process can continue with full traceability. Directors can evaluate requests, while privileged users control final status transitions (approve/reject), ensuring governance, compliance, and data integrity throughout the workflow.",
+          role: "Front-End Architect & Developer",
+          responsibilities: [
+            "Designed and implemented the frontend architecture and module structure for a scalable product foundation.",
+            "Defined component standards and UI library usage to keep the platform consistent and maintainable.",
+            "Implemented secure role-based flows and frontend protection for sensitive user actions.",
+            "Built core modules with Next.js, TypeScript, and Ant Design for an enterprise-grade UX.",
+            "Integrated Zustand, Axios, and TanStack Query for reliable state and API interaction patterns.",
+            "Applied a modular architecture to support long-term growth and team collaboration."
+          ],
+          techStack: ["Next.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Modular Architecture"],
+          tags: ["Next.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Modular Architecture"],
+          type: "web",
+        },
+        {
           id: 3,
           img: assetUrl("images/talentonet/simonapp/simon1.webp"),
           img2: assetUrl("images/talentonet/simonapp/simon2.webp"),
@@ -439,6 +459,26 @@ export const DATA = {
           techStack: ["React", "Material UI", "Redux Toolkit", "Chart.js", "Vite", "Axios"],
           demo: "https://www.ingresospropios.michoacan.gob.mx/",
           tags: ["React", "Material UI", "Redux Toolkit", "Chart.js", "Vite", "Axios"],
+          type: "web",
+        },
+        {
+          id: 4,
+          img: assetUrl("images/government/data-datos-gratis/d4ta-login.png"),
+          img2: assetUrl("images/government/data-datos-gratis/d4ta-dashboard.png"),
+          title: "D4TA - Datos Gratis",
+          description: "Plataforma gubernamental para gestionar solicitudes estudiantiles de un beneficio gratuito de 4 GB mensuales, validando cada registro con CURP y matrícula escolar.",
+          longDescription: "D4TA - Datos Gratis es una iniciativa del gobierno enfocada en reducir la brecha digital de estudiantes mediante la entrega de 4 GB mensuales gratuitos para uso personal. La plataforma valida cada solicitud con CURP y matrícula escolar, y después canaliza el trámite a la institución correspondiente para su revisión. Al registrarse, cada estudiante recibe una clave única que comparte con su director para dar continuidad al proceso con trazabilidad completa. Los directores evalúan las solicitudes y los usuarios con privilegios administrativos controlan los cambios de estatus finales (aprobado/rechazado), garantizando gobernanza, cumplimiento e integridad de datos.",
+          role: "Arquitecto y Desarrollador Front-End",
+          responsibilities: [
+            "Diseñé e implementé la arquitectura frontend y la estructura modular del proyecto para escalar de forma sostenible.",
+            "Definí estándares de componentes y uso de librerías UI para mantener consistencia y mantenibilidad.",
+            "Implementé flujos seguros por roles y protección frontend para acciones sensibles.",
+            "Construí los módulos principales con Next.js, TypeScript y Ant Design para una experiencia robusta.",
+            "Integré Zustand, Axios y TanStack Query para un manejo confiable de estado y peticiones.",
+            "Apliqué arquitectura modular para facilitar crecimiento a largo plazo y colaboración del equipo."
+          ],
+          techStack: ["Next.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Arquitectura Modular"],
+          tags: ["Next.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Arquitectura Modular"],
           type: "web",
         },
         {
