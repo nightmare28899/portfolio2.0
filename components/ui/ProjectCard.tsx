@@ -20,6 +20,7 @@ export default function ProjectCard({ project, index, onClickAction }: { project
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
     const [showAllTags, setShowAllTags] = useState(false);
+    const projectTitleHref = project.titleLink ?? project.demo ?? project.github;
 
     useEffect(() => {
         if (!isHovered && images.length > 1) {
@@ -174,10 +175,10 @@ export default function ProjectCard({ project, index, onClickAction }: { project
 
             <div className="p-6 grow flex flex-col">
                 <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                    {project.titleLink ? (
-                        <Link href={project.titleLink} target="_blank" onClick={(e) => e.stopPropagation()}>{project.title}</Link>
+                    {projectTitleHref ? (
+                        <Link href={projectTitleHref} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>{project.title}</Link>
                     ) : (
-                        <Link href={project.demo!} target="_blank" onClick={(e) => e.stopPropagation()}>{project.title}</Link>
+                        <span>{project.title}</span>
                     )}
                 </h3>
 
