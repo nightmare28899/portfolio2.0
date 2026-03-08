@@ -180,8 +180,8 @@ export const DATA = {
         },
         {
           id: 2,
-          img: assetUrl("images/government/ingresos-propios-login.png"),
-          img2: assetUrl("images/government/ingresos-propios-home.png"),
+          img: assetUrl("images/government/ingresos-propios-2.0/ingresos-propios-login.png"),
+          img2: assetUrl("images/government/ingresos-propios-2.0/ingresos-propios-home.png"),
           title: "Ingresos Propios",
           description: "A government platform designed to manage public institutions in the state of Michoacán, providing detailed reporting and statistical insights on operational costs and revenue generated through institutional registrations.",
           longDescription: "Ingresos Propios is a critical government platform that streamlines the financial management of public institutions in Michoacán. It replaces legacy manual processes with a centralized digital system for tracking revenue, expenses, and budget allocation. The dashboard provides real-time visualization of financial data, enabling decision-makers to audit and analyze institutional performance with valid, granular data. Security and data integrity were paramount in its design.",
