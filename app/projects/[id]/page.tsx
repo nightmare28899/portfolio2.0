@@ -10,9 +10,13 @@ export function generateStaticParams() {
     }));
 }
 
-const ProjectDetail = ({ params }: { params: { id: string } }) => {
+type ProjectDetailProps = {
+    params: Promise<{ id: string }>;
+};
+
+const ProjectDetail = async ({ params }: ProjectDetailProps) => {
     const t = DATA.en;
-    const id = params.id;
+    const { id } = await params;
     const project = t.projects.items.find((p) => p.id === Number(id));
 
     if (!project) {

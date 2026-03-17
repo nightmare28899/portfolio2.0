@@ -11,7 +11,7 @@
 }
 
 @theme {
-  --font-sans: var(--font-outfit), sans-serif;
+  --font-sans: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   --color-primary: #8b5cf6;
   --color-secondary: #ec4899;
