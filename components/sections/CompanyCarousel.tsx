@@ -3,13 +3,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { COMPANIES } from "@/lib/data";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function CompanyCarousel() {
+    const { t } = useLanguage();
     return (
         <div className="w-full py-10 overflow-hidden bg-white/5 backdrop-blur-sm border-y border-white/5">
             <div className="container mx-auto px-6 mb-8 text-center">
                 <p className="text-sm font-medium text-gray-400 uppercase tracking-wider">
-                    Trusted by Innovative Teams
+                    {t.about.trusted}
                 </p>
             </div>
 
