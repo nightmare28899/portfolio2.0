@@ -214,12 +214,12 @@ export const DATA = {
             "Designed the full frontend architecture and module structure for a scalable, maintainable codebase.",
             "Defined shared component patterns and library standards for consistency across the platform.",
             "Implemented protected role-based flows for students, directors, and privileged administrative users.",
-            "Built core modules with Next.js, TypeScript, and Ant Design for an enterprise-grade experience.",
+            "Built core modules with React, TypeScript, and Ant Design for an enterprise-grade experience.",
             "Integrated Zustand, Axios, and TanStack Query to manage state, API communication, and caching strategies.",
             "Applied modular architecture principles to support long-term growth and team collaboration."
           ],
-          techStack: ["Next.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Modular Architecture"],
-          tags: ["Next.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Modular Architecture"],
+          techStack: ["React", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Modular Architecture"],
+          tags: ["React", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Modular Architecture"],
           type: "web",
         },
         {
@@ -481,12 +481,12 @@ export const DATA = {
             "Diseñé la arquitectura frontend completa y la estructura modular del proyecto para escalar con solidez.",
             "Definí estándares de componentes y lineamientos de librerías UI para mantener consistencia del producto.",
             "Implementé flujos protegidos por roles para estudiantes, directores y usuarios administrativos privilegiados.",
-            "Construí módulos clave con Next.js, TypeScript y Ant Design para una experiencia robusta y mantenible.",
+            "Construí módulos clave con React, TypeScript y Ant Design para una experiencia robusta y mantenible.",
             "Integré Zustand, Axios y TanStack Query para gestionar estado, peticiones y caché de forma confiable.",
             "Apliqué arquitectura modular para facilitar crecimiento a largo plazo y colaboración entre equipos."
           ],
-          techStack: ["Next.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Arquitectura Modular"],
-          tags: ["Next.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Arquitectura Modular"],
+          techStack: ["React", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Arquitectura Modular"],
+          tags: ["React", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Arquitectura Modular"],
           type: "web",
         },
         {
