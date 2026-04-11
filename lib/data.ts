@@ -219,8 +219,10 @@ export const DATA = {
             "Applied modular architecture principles to support long-term growth and team collaboration."
           ],
           techStack: ["React.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Modular Architecture"],
+          demo: "https://data.michoacan.gob.mx/",
           tags: ["React.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Modular Architecture"],
           type: "web",
+          titleLink: "https://data.michoacan.gob.mx/"
         },
         {
           id: 5,
@@ -508,8 +510,10 @@ export const DATA = {
             "Apliqué arquitectura modular para facilitar crecimiento a largo plazo y colaboración entre equipos."
           ],
           techStack: ["React.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Arquitectura Modular"],
+          demo: "https://data.michoacan.gob.mx/",
           tags: ["React.js", "TypeScript", "Ant Design", "Zustand", "Axios", "TanStack Query", "Vite", "Arquitectura Modular"],
           type: "web",
+          titleLink: "https://data.michoacan.gob.mx/",
         },
         {
           id: 5,
