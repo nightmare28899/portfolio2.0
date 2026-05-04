@@ -185,9 +185,13 @@ export default function ProjectCard({ project, index, onClickAction }: { project
                     )}
                 </h3>
 
-                <p className={`text-gray-400 text-sm mb-4 ${project.type === "web" ? "line-clamp-6" : "line-clamp-3"}`}>
+                <p className={`text-gray-400 text-sm mb-3 ${project.type === "web" ? "line-clamp-4" : "line-clamp-3"}`}>
                     {projectCardDescription}
                 </p>
+
+                {project.role && (
+                    <p className="text-xs text-primary/90 mb-3 font-medium">Role: {project.role}</p>
+                )}
 
                 <div className="flex flex-wrap gap-2 mt-auto">
                     {(showAllTags ? project.tags : project.tags.slice(0, 3)).map((tag) => (

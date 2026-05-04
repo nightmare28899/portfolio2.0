@@ -29,9 +29,9 @@ export const DATA = {
   en: {
     navbar: {
       home: "Home",
-      about: "About",
-      projects: "Projects",
-      skills: "Skills",
+      about: "Experience",
+      projects: "Selected Work",
+      skills: "Technical Strengths",
       tech: "Portfolio",
       contact: "Contact",
     },
@@ -45,7 +45,7 @@ export const DATA = {
       techSubtitle: "Next.js • React • Tailwind",
     },
     about: {
-      title: "About Me",
+      title: "Experience Snapshot",
       role: "Full-Stack Developer",
       description: "Full-Stack Developer with a strong Front-End focus, experienced in leading and structuring scalable front-end solutions for real-world products. I focus on clean architecture, performance optimization, and long-term maintainability, contributing not only with code but also with technical decision-making and team collaboration.",
       experience: "4 years working",
@@ -58,7 +58,7 @@ export const DATA = {
       trusted: "Trusted by Innovative Teams"
     },
     skills: {
-      title: "Skills & Tech Stack",
+      title: "Technical Strengths",
       items: [
         {
           name: "React",
@@ -148,7 +148,7 @@ export const DATA = {
       ] as SkillItem[]
     },
     projects: {
-      title: "Featured Projects",
+      title: "Selected Work",
       technologies: "Technologies",
       overview: "Overview",
       keyResponsibilities: "Key Responsibilities",
@@ -321,9 +321,9 @@ export const DATA = {
   es: {
     navbar: {
       home: "Inicio",
-      about: "Sobre mí",
-      projects: "Proyectos",
-      skills: "Habilidades",
+      about: "Experiencia",
+      projects: "Trabajo Seleccionado",
+      skills: "Fortalezas Técnicas",
       tech: "Portafolio",
       contact: "Contacto",
     },
@@ -337,7 +337,7 @@ export const DATA = {
       techSubtitle: "Next.js • React • Tailwind",
     },
     about: {
-      title: "Sobre mí",
+      title: "Resumen de Experiencia",
       role: "Desarrollador Full-Stack",
       description: "Desarrollador Full-Stack con un fuerte enfoque en Front-End, con experiencia liderando y estructurando soluciones front-end escalables para productos del mundo real. Me enfoco en arquitectura limpia, optimización de rendimiento y mantenibilidad a largo plazo, contribuyendo no solo con código sino también con toma de decisiones técnicas y colaboración en equipo.",
       experience: "4 años trabajando",
@@ -350,7 +350,7 @@ export const DATA = {
       trusted: "Con la confianza de equipos innovadores"
     },
     skills: {
-      title: "Habilidades y Tecnologías",
+      title: "Fortalezas Técnicas",
       items: [
         {
           name: "React",
@@ -440,7 +440,7 @@ export const DATA = {
       ] as SkillItem[]
     },
     projects: {
-      title: "Proyectos Destacados",
+      title: "Trabajo Seleccionado",
       technologies: "Tecnologías",
       overview: "Descripción General",
       keyResponsibilities: "Responsabilidades Clave",

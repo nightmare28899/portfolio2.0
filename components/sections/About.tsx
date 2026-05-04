@@ -21,6 +21,7 @@ export default function About() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
+                    <h2 className="text-4xl font-bold mb-4">{t.about.title}</h2>
                     <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
                 </motion.div>
 
