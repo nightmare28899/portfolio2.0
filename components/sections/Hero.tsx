@@ -25,6 +25,11 @@ export default function Hero() {
                     <span className="text-secondary font-medium tracking-wider mb-4 block uppercase text-lg">
                         {t.hero.role}
                     </span>
+                    <div className="flex flex-wrap gap-2 mb-5">
+                        <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300">Available for Remote Full-time</span>
+                        <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-400/30 text-cyan-300">4 years experience</span>
+                        <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-violet-500/15 border border-violet-400/30 text-violet-300">Spanish + English (B1+)</span>
+                    </div>
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                         {t.hero.greeting} <br />
                         <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-accent">

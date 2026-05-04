@@ -11,7 +11,7 @@ export const COMPANIES = [
 
 export const PERSONAL_INFO = {
   name: "Kevin López",
-  role: "Full-Stack Developer",
+  role: "Mobile & Full-Stack Developer",
   bio: "I am a Full-Stack developer with a passion for creating beautiful responsive websites. I have a passion for learning new technologies and practicing by doing projects; I am dedicated to building robust and scalable web applications.",
   experience: "4 years working",
   freelance: "Freelance",
@@ -36,9 +36,9 @@ export const DATA = {
       contact: "Contact",
     },
     hero: {
-      role: "Full-Stack Developer",
+      role: "Mobile & Full-Stack Developer",
       greeting: "Hello, I'm",
-      description: "I am a Front-End focused Full-Stack Developer with experience building scalable, maintainable web applications for real-world products.\n\nI currently work as a Front-End Team Coordinator, contributing to technical decision-making, code reviews, and close collaboration with designers, backend engineers, and stakeholders to deliver high-quality, production-ready solutions.",
+      description: "I build cross-platform mobile apps and scalable web systems with React Native, JavaScript/TypeScript, Laravel, and modern frontend frameworks.\n\nI focus on clean architecture, performance, and business impact—shipping production-ready solutions for real users while collaborating across design, backend, and product teams.",
       ctaProject: "View Projects",
       ctaCV: "Download CV",
       techTitle: "Modern Tech",
@@ -328,9 +328,9 @@ export const DATA = {
       contact: "Contacto",
     },
     hero: {
-      role: "Desarrollador Full-Stack",
+      role: "Desarrollador Mobile y Full-Stack",
       greeting: "Hola, soy",
-      description: "Soy un Desarrollador Full-Stack enfocado en el Front-End con experiencia en la construcción de aplicaciones web escalables y mantenibles para productos del mundo real.\n\nActualmente trabajo como Coordinador de Equipo Front-End, contribuyendo a la toma de decisiones técnicas, revisiones de código y una estrecha colaboración con diseñadores, ingenieros backend y partes interesadas para entregar soluciones de alta calidad listas para producción.",
+      description: "Construyo aplicaciones móviles multiplataforma y sistemas web escalables con React Native, JavaScript/TypeScript, Laravel y frameworks frontend modernos.\n\nMe enfoco en arquitectura limpia, rendimiento e impacto de negocio, entregando soluciones listas para producción en colaboración con equipos de diseño, backend y producto.",
       ctaProject: "Ver Proyectos",
       ctaCV: "Descargar CV",
       techTitle: "Tecnología Moderna",
