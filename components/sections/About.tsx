@@ -21,6 +21,7 @@ export default function About() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
+                    <h2 className="text-4xl font-bold mb-4">{t.about.title}</h2>
                     <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
                 </motion.div>
 
@@ -32,9 +33,14 @@ export default function About() {
                         viewport={{ once: true }}
                         className="space-y-6"
                     >
-                        <h3 className="text-2xl font-bold">
+                        <h3 className="text-2xl md:text-3xl font-bold leading-tight">
                             {t.hero.greeting} <span className="text-primary">{PERSONAL_INFO.name}</span>, a {t.about.role}
                         </h3>
+                        <div className="flex flex-wrap gap-2">
+                            <span className="text-xs px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary">React Native</span>
+                            <span className="text-xs px-3 py-1 rounded-full bg-accent/15 border border-accent/30 text-accent">Laravel + Node.js</span>
+                            <span className="text-xs px-3 py-1 rounded-full bg-secondary/15 border border-secondary/30 text-secondary">Remote Collaboration</span>
+                        </div>
                         <p className="text-gray-400 leading-relaxed text-lg">
                             {t.about.description}
                         </p>
@@ -55,8 +61,8 @@ export default function About() {
                                     <User size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-lg">{t.about.freelance}</h4>
-                                    <p className="text-sm text-gray-500">{t.about.available}</p>
+                                    <h4 className="font-bold text-lg">Remote Full-time</h4>
+                                    <p className="text-sm text-gray-500">9:00 AM – 6:00 PM (Mexico)</p>
                                 </div>
                             </div>
 
