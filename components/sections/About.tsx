@@ -60,8 +60,8 @@ export default function About() {
                                     <User size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-lg">{t.about.freelance}</h4>
-                                    <p className="text-sm text-gray-500">{t.about.available}</p>
+                                    <h4 className="font-bold text-lg">Remote Full-time</h4>
+                                    <p className="text-sm text-gray-500">9:00 AM – 6:00 PM (Mexico)</p>
                                 </div>
                             </div>
 

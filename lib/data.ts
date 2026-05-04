@@ -274,15 +274,15 @@ export const DATA = {
     },
 
     contact: {
-      title: "Get In Touch",
-      subtitle: "Have a project in mind or just want to say hi? I'm always open to discussing new opportunities.",
+      title: "Contact",
+      subtitle: "Open to remote full-time opportunities. Response time: within 24 hours.",
       name: "Name",
       namePlaceholder: "John Doe",
       email: "Email",
       emailPlaceholder: "john@example.com",
       message: "Message",
-      messagePlaceholder: "Your message...",
-      send: "Send Message",
+      messagePlaceholder: "Recruiter or hiring message...",
+      send: "Send",
       sending: "Sending...",
       success: "Sent Successfully",
       error: "Failed to Send"
@@ -566,14 +566,14 @@ export const DATA = {
 
     contact: {
       title: "Contacto",
-      subtitle: "¿Tienes un proyecto en mente o solo quieres saludar? Siempre estoy abierto a nuevas oportunidades.",
+      subtitle: "Abierto a oportunidades remotas full-time. Tiempo de respuesta: dentro de 24 horas.",
       name: "Nombre",
       namePlaceholder: "Juan Pérez",
       email: "Correo",
       emailPlaceholder: "juan@ejemplo.com",
       message: "Mensaje",
-      messagePlaceholder: "Tu mensaje...",
-      send: "Enviar Mensaje",
+      messagePlaceholder: "Mensaje de reclutador o vacante...",
+      send: "Enviar",
       sending: "Enviando...",
       success: "Enviado con Éxito",
       error: "Error al Enviar"
