@@ -91,11 +91,6 @@ export const DATA = {
           description: "Advanced CSS techniques for customizing component styles and layout."
         },
         {
-          name: "Ant-design",
-          category: "Core Expertise",
-          description: "Designing accessible, responsive, and consistent user interfaces with a component library."
-        },
-        {
           name: "Clean Architecture",
           category: "Engineering & Architecture",
           description: "Designing modular, maintainable codebases using SOLID principles and layered architecture."
@@ -386,11 +381,6 @@ export const DATA = {
           name: "CSS",
           category: "Experiencia Principal",
           description: "Técnicas avanzadas de CSS para personalizar estilos y maquetación de componentes."
-        },
-        {
-          name: "Ant-design",
-          category: "Experiencia Principal",
-          description: "Diseño de interfaces de usuario accesibles, responsivas y consistentes con una biblioteca de componentes."
         },
         {
           name: "Clean Architecture",
