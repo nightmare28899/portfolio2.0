@@ -91,11 +91,6 @@ export const DATA = {
           description: "Advanced CSS techniques for customizing component styles and layout."
         },
         {
-          name: "Ant-design",
-          category: "Core Expertise",
-          description: "Designing accessible, responsive, and consistent user interfaces with a component library."
-        },
-        {
           name: "Clean Architecture",
           category: "Engineering & Architecture",
           description: "Designing modular, maintainable codebases using SOLID principles and layered architecture."
@@ -129,6 +124,11 @@ export const DATA = {
           name: "CI/CD",
           category: "Infrastructure & Tooling",
           description: "Automating testing and deployment pipelines to ensure reliable delivery."
+        },
+        {
+          name: "Testing",
+          category: "Infrastructure & Tooling",
+          description: "Designing reliable unit, integration, and end-to-end testing strategies using Jest, React Testing Library, and Cypress to prevent regressions."
         },
         {
           name: "Tech Leadership",
@@ -383,11 +383,6 @@ export const DATA = {
           description: "Técnicas avanzadas de CSS para personalizar estilos y maquetación de componentes."
         },
         {
-          name: "Ant-design",
-          category: "Experiencia Principal",
-          description: "Diseño de interfaces de usuario accesibles, responsivas y consistentes con una biblioteca de componentes."
-        },
-        {
           name: "Clean Architecture",
           category: "Ingeniería y Arquitectura",
           description: "Diseño de bases de código modulares y mantenibles utilizando principios SOLID y arquitectura por capas."
@@ -421,6 +416,11 @@ export const DATA = {
           name: "CI/CD",
           category: "Infraestructura y Herramientas",
           description: "Automatización de pipelines de pruebas y despliegue para asegurar entregas fiables."
+        },
+        {
+          name: "Testing",
+          category: "Infraestructura y Herramientas",
+          description: "Diseño de estrategias confiables de pruebas unitarias, de integración y end-to-end con Jest, React Testing Library y Cypress para prevenir regresiones."
         },
         {
           name: "Technical Leadership",
