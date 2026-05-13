@@ -126,9 +126,9 @@ export const DATA = {
           description: "Automating testing and deployment pipelines to ensure reliable delivery."
         },
         {
-          name: "Testing",
+          name: "Testing (Jest)",
           category: "Infrastructure & Tooling",
-          description: "Designing reliable unit, integration, and end-to-end testing strategies using Jest, React Testing Library, and Cypress to prevent regressions."
+          description: "Designing reliable unit, integration, and end-to-end testing strategies with Jest as the primary framework, complemented by React Testing Library and Cypress to prevent regressions."
         },
         {
           name: "Tech Leadership",
@@ -418,9 +418,9 @@ export const DATA = {
           description: "Automatización de pipelines de pruebas y despliegue para asegurar entregas fiables."
         },
         {
-          name: "Testing",
+          name: "Testing (Jest)",
           category: "Infraestructura y Herramientas",
-          description: "Diseño de estrategias confiables de pruebas unitarias, de integración y end-to-end con Jest, React Testing Library y Cypress para prevenir regresiones."
+          description: "Diseño de estrategias confiables de pruebas unitarias, de integración y end-to-end con Jest como framework principal, complementado con React Testing Library y Cypress para prevenir regresiones."
         },
         {
           name: "Technical Leadership",
