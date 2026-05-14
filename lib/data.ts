@@ -126,10 +126,25 @@ export const DATA = {
           description: "Automating testing and deployment pipelines to ensure reliable delivery."
         },
         {
-          name: "Testing (Jest)",
-          category: "Infrastructure & Tooling",
-          description: "Designing reliable unit, integration, and end-to-end testing strategies with Jest as the primary framework, complemented by React Testing Library and Cypress to prevent regressions."
+          name: "Jest",
+          category: "Testing & Quality",
+          description: "Writing focused unit and integration tests for business rules, utilities, hooks, and critical frontend behavior."
         },
+        {
+          name: "React Testing Library",
+          category: "Testing & Quality",
+          description: "Testing components through user-visible behavior instead of implementation details."
+        },
+        // {
+        //   name: "Cypress",
+        //   category: "Testing & Quality",
+        //   description: "Covering high-risk user flows with end-to-end and regression checks."
+        // },
+        // {
+        //   name: "CI Test Coverage",
+        //   category: "Testing & Quality",
+        //   description: "Running automated test checks in delivery pipelines before production releases."
+        // },
         {
           name: "Tech Leadership",
           category: "Team & Leadership",
@@ -147,6 +162,7 @@ export const DATA = {
         },
       ] as SkillItem[]
     },
+
     projects: {
       title: "Selected Work",
       technologies: "Technologies",
@@ -418,10 +434,25 @@ export const DATA = {
           description: "Automatización de pipelines de pruebas y despliegue para asegurar entregas fiables."
         },
         {
-          name: "Testing (Jest)",
-          category: "Infraestructura y Herramientas",
-          description: "Diseño de estrategias confiables de pruebas unitarias, de integración y end-to-end con Jest como framework principal, complementado con React Testing Library y Cypress para prevenir regresiones."
+          name: "Jest",
+          category: "Testing y Calidad",
+          description: "Creación de pruebas unitarias e integración enfocadas en reglas de negocio, utilidades, hooks y comportamiento frontend crítico."
         },
+        {
+          name: "React Testing Library",
+          category: "Testing y Calidad",
+          description: "Pruebas de componentes basadas en comportamiento visible para el usuario, no en detalles de implementación."
+        },
+        // {
+        //   name: "Cypress",
+        //   category: "Testing y Calidad",
+        //   description: "Cobertura de flujos de usuario críticos con pruebas end-to-end y checks de regresión."
+        // },
+        // {
+        //   name: "Cobertura en CI",
+        //   category: "Testing y Calidad",
+        //   description: "Ejecución automatizada de pruebas en pipelines antes de liberar a producción."
+        // },
         {
           name: "Technical Leadership",
           category: "Equipo y Liderazgo",
@@ -439,6 +470,7 @@ export const DATA = {
         },
       ] as SkillItem[]
     },
+
     projects: {
       title: "Trabajo Seleccionado",
       technologies: "Tecnologías",

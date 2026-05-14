@@ -11,7 +11,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const { language, toggleLanguage, t } = useLanguage();
-    const activeSection = useActiveSection(["hero", "about", "projects", "skills", "tech-infrastructure", "contact"]);
+    const activeSection = useActiveSection(["hero", "about", "skills", "projects", "tech-infrastructure", "contact"]);
 
     const navLinks = [
         { name: t.navbar.home, href: "#hero" },
@@ -61,7 +61,7 @@ export default function Navbar() {
                     <span>Kevinlg<span className="text-primary">.dev</span></span>
                 </Link>
 
-                <div className="hidden md:flex gap-8 items-center">
+                <div className="hidden lg:flex gap-5 xl:gap-8 items-center">
                     {navLinks.map((link) => {
                         const isActive = activeSection === link.href.substring(1);
                         return (
@@ -85,7 +85,7 @@ export default function Navbar() {
                 </div>
 
                 <button
-                    className="md:hidden text-foreground"
+                    className="lg:hidden text-foreground"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X /> : <Menu />}
@@ -98,7 +98,7 @@ export default function Navbar() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-full left-0 w-full glass border-b border-white/10 flex flex-col items-center py-8 gap-6 md:hidden"
+                        className="absolute top-full left-0 w-full glass border-b border-white/10 flex flex-col items-center py-8 gap-6 lg:hidden"
                     >
                         {navLinks.map((link) => {
                             const isActive = activeSection === link.href.substring(1);

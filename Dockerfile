@@ -9,13 +9,11 @@ RUN npm ci
 
 FROM base AS builder
 WORKDIR /app
+ENV BUILD_MODE=docker
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN npm run build   
-
-# Ensure the standalone directory exists to prevent the build from failing if it's not generated
-RUN mkdir -p .next/standalone
+RUN npm run build
 
 FROM base AS runner
 WORKDIR /app

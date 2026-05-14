@@ -22,9 +22,12 @@ import {
     SiExpress,
     SiAxios,
     SiFirebase,
+    SiCypress,
+    SiJest,
     SiGitlab,
     SiNodedotjs,
     SiPostgresql,
+    SiTestinglibrary,
 } from "react-icons/si";
 import { Code2, Box, Database, Layers, Zap, Globe, Users, CheckCircle, Repeat, Smartphone } from "lucide-react";
 
@@ -32,6 +35,7 @@ export const getTechIcon = (tag: string) => {
     // Normalize string to lowercase for easier matching
     const normalizedTag = tag.toLowerCase().replace(/\s+/g, "");
 
+    if (normalizedTag.includes("testinglibrary")) return <SiTestinglibrary className="text-[#E33332]" />;
     if (normalizedTag.includes("react-native")) return <SiReact className="text-[#61DAFB]" />;
     if (normalizedTag.includes("reactrouter")) return <SiReactrouter className="text-[#CA4245]" />;
     if (normalizedTag.includes("react")) return <SiReact className="text-[#61DAFB]" />;
@@ -50,6 +54,8 @@ export const getTechIcon = (tag: string) => {
     if (normalizedTag.includes("styled-components") || normalizedTag.includes("styledcomponents")) return <SiStyledcomponents className="text-[#DB7093]" />;
     if (normalizedTag.includes("next")) return <SiNextdotjs className="text-[#000000] dark:text-white" />;
     if (normalizedTag.includes("tailwind")) return <SiTailwindcss className="text-[#06B6D4]" />;
+    if (normalizedTag.includes("jest") || normalizedTag.includes("testing")) return <SiJest className="text-[#C21325]" />;
+    if (normalizedTag.includes("cypress")) return <SiCypress className="text-[#69D3A7]" />;
     if (normalizedTag.includes("docker")) return <SiDocker className="text-[#2496ED]" />;
     if (normalizedTag.includes("git")) return <SiGit className="text-[#F05032]" />;
     if (normalizedTag.includes("gitlab")) return <SiGitlab className="text-[#FC6D26]" />;
@@ -68,7 +74,7 @@ export const getTechIcon = (tag: string) => {
     if (normalizedTag.includes("mobile")) return <Smartphone size={14} className="text-green-400" />;
 
     // Infrastructure
-    if (normalizedTag.includes("ci/cd")) return <Repeat size={14} className="text-orange-400" />;
+    if (normalizedTag.includes("ci/cd") || normalizedTag.includes("coverage") || normalizedTag.includes("cobertura")) return <Repeat size={14} className="text-orange-400" />;
 
     // Leadership
     if (normalizedTag.includes("leadership")) return <Users size={14} className="text-emerald-400" />;
