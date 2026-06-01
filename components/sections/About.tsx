@@ -51,7 +51,7 @@ export default function About() {
                                     <Briefcase size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-lg">{t.about.experience}</h4>
+                                    <h4 className="font-bold text-lg">4+ years of professional experience</h4>
                                     <p className="text-sm text-gray-500">{t.about.experienceLabel}</p>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@ export default function About() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-lg">Remote Full-time</h4>
-                                    <p className="text-sm text-gray-500">9:00 AM – 6:00 PM (Mexico)</p>
+                                    <p className="text-sm text-gray-500">Open to remote full-time roles</p>
                                 </div>
                             </div>
 

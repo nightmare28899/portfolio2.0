@@ -30,13 +30,13 @@ export default function Hero() {
                         <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-400/30 text-cyan-300">4 years experience</span>
                         <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-violet-500/15 border border-violet-400/30 text-violet-300">Bilingual collaboration (ES/EN)</span>
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                        {t.hero.greeting} <br />
-                        <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-accent">
-                            {PERSONAL_INFO.name}
-                        </span>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                        Full-Stack Developer building production-ready web and mobile applications
                     </h1>
-                    <p className="text-lg text-gray-400 mb-8 max-w-lg leading-relaxed">
+                    <h2 className="text-xl md:text-2xl mb-4 text-transparent bg-clip-text bg-linear-to-r from-primary to-accent font-semibold">
+                        {PERSONAL_INFO.name}
+                    </h2>
+                    <p className="text-lg text-gray-400 mb-8 max-w-2xl leading-relaxed">
                         {t.hero.description}
                     </p>
 

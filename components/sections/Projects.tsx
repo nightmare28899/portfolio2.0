@@ -11,7 +11,7 @@ export default function Projects() {
     const { t } = useLanguage();
     const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
 
-    const featuredProjects = t.projects.items.slice(0, 3);
+    const featuredProjects = t.projects.items;
 
     return (
         <section id="projects" className="py-24 bg-black/20">

@@ -25,10 +25,15 @@ export default function Contact() {
                 </motion.div>
 
                 <div className="max-w-2xl mx-auto glass-card p-8 rounded-2xl border border-white/10 text-center">
-                    <p className="text-gray-300 mb-2">Remote Full-time · 9:00 AM – 6:00 PM (Mexico)</p>
+                    <p className="text-gray-300 mb-2">Open to remote full-time opportunities as a Full-Stack Developer.</p>
                     <a href={`mailto:${PERSONAL_INFO.email}`} className="text-primary hover:underline text-lg font-semibold">
-                        {PERSONAL_INFO.email}
+                        Contact Me: {PERSONAL_INFO.email}
                     </a>
+                    <div className="mt-6 flex flex-wrap justify-center gap-3">
+                        <a href={PERSONAL_INFO.resumeEn} target="_blank" rel="noreferrer" className="px-4 py-2 rounded-full border border-white/20 hover:bg-white/10 transition">Download Resume</a>
+                        <a href={PERSONAL_INFO.linkedin} target="_blank" rel="noreferrer" className="px-4 py-2 rounded-full border border-white/20 hover:bg-white/10 transition">LinkedIn</a>
+                        <a href={PERSONAL_INFO.github} target="_blank" rel="noreferrer" className="px-4 py-2 rounded-full border border-white/20 hover:bg-white/10 transition">GitHub</a>
+                    </div>
 
                     <div className="mt-8 pt-8 border-t border-white/10 flex justify-center gap-6">
                         {SOCIALS.map((social) => (

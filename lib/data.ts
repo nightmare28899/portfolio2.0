@@ -11,9 +11,9 @@ export const COMPANIES = [
 
 export const PERSONAL_INFO = {
   name: "Kevin López",
-  role: "Mobile & Full-Stack Developer",
+  role: "Full-Stack Developer | React, React Native, TypeScript, Laravel & Node.js",
   bio: "I am a Full-Stack developer with a passion for creating beautiful responsive websites. I have a passion for learning new technologies and practicing by doing projects; I am dedicated to building robust and scalable web applications.",
-  experience: "4 years working",
+  experience: "4+ years of professional experience",
   freelance: "Freelance",
   available: "Available",
   location: "Morelia, Michoacán",
@@ -36,8 +36,8 @@ export const DATA = {
       contact: "Contact",
     },
     hero: {
-      role: "Mobile & Full-Stack Developer",
-      greeting: "Hello, I'm",
+      role: "Full-Stack Developer | React, React Native, TypeScript, Laravel & Node.js",
+      greeting: "Hi, I'm",
       description: "I build cross-platform mobile apps and scalable web systems with React Native, JavaScript/TypeScript, Laravel, and modern frontend frameworks.\n\nI focus on clean architecture, performance, and business impact—shipping production-ready solutions for real users while collaborating across design, backend, and product teams.",
       ctaProject: "View Projects",
       ctaCV: "Download CV",
@@ -48,7 +48,7 @@ export const DATA = {
       title: "Experience Snapshot",
       role: "Full-Stack Developer",
       description: "Full-Stack Developer with a strong Front-End focus, experienced in leading and structuring scalable front-end solutions for real-world products. I focus on clean architecture, performance optimization, and long-term maintainability, contributing not only with code but also with technical decision-making and team collaboration.",
-      experience: "4 years working",
+      experience: "4+ years of professional experience",
       experienceLabel: "Experience",
       freelance: "Freelance",
       available: "Available",
@@ -166,8 +166,8 @@ export const DATA = {
     projects: {
       title: "Selected Work",
       technologies: "Technologies",
-      overview: "Overview",
-      keyResponsibilities: "Key Responsibilities",
+      overview: "Problem",
+      keyResponsibilities: "My Role & What I Built",
       viewSource: "View Source",
       back: "Back to Projects",
       items: [

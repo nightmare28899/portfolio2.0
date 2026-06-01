@@ -2,7 +2,7 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
-
+import ExperienceTimeline from "@/components/sections/ExperienceTimeline";
 import TechInfrastructure from "@/components/sections/TechInfrastructure";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/globals/Footer";
@@ -14,6 +14,7 @@ export default function Home() {
             <About/>
             <Skills/>
             <Projects/>
+            <ExperienceTimeline/>
             <TechInfrastructure/>
             <Contact/>
             <Footer/>

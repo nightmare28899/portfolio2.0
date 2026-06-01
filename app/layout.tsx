@@ -6,7 +6,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "Kevin López | Front-end Developer",
+  title: "Kevin López González | Full-Stack Developer",
   description: "Personal portfolio of Kevin López, showcasing projects and skills.",
 };
 
