@@ -12,7 +12,7 @@ export default function Hero() {
     const { t, language } = useLanguage();
 
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-12 md:pb-20">
             <div className="absolute top-[-20%] right-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px] pointer-events-none" />
 
