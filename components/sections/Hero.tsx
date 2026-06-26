@@ -3,47 +3,95 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { motion, useReducedMotion } from "framer-motion";
+import { ArrowRight, BriefcaseBusiness, Download } from "lucide-react";
 import { PERSONAL_INFO } from "@/lib/data";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Hero() {
     const { t, language } = useLanguage();
+    const shouldReduceMotion = useReducedMotion();
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 18 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.55 },
+        },
+    };
 
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-12 md:pb-20">
-            <div className="absolute top-[-20%] right-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
-            <div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px] pointer-events-none" />
+        <section
+            id="hero"
+            className="relative min-h-screen overflow-hidden bg-[linear-gradient(135deg,rgba(10,10,10,1)_0%,rgba(18,18,24,0.98)_48%,rgba(8,28,34,0.92)_100%)] pt-28 pb-12 md:pt-32 md:pb-20"
+        >
+            <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(139,92,246,0.16),transparent_34%,rgba(6,182,212,0.12)_68%,transparent)] pointer-events-none" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.08),transparent_48%)] pointer-events-none" />
 
-            <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div className="container relative z-10 mx-auto grid min-h-[calc(100vh-7rem)] items-center gap-12 px-6 py-12 md:grid-cols-[1.05fr_0.95fr] md:py-16 lg:gap-16">
                 <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                        hidden: { opacity: 0 },
+                        visible: {
+                            opacity: 1,
+                            transition: {
+                                staggerChildren: shouldReduceMotion ? 0 : 0.09,
+                                delayChildren: shouldReduceMotion ? 0 : 0.1,
+                            },
+                        },
+                    }}
+                    className="max-w-3xl"
                 >
-                    <span className="text-secondary font-medium tracking-wider mb-4 block uppercase text-lg">
+                    <motion.span
+                        variants={itemVariants}
+                        className="mb-4 block text-sm font-semibold uppercase tracking-[0.22em] text-accent"
+                    >
                         {t.hero.role}
-                    </span>
-                    <div className="flex flex-wrap gap-2 mb-5">
-                        <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300">Available for Remote Full-time</span>
-                        <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-400/30 text-cyan-300">4 years experience</span>
-                        <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-violet-500/15 border border-violet-400/30 text-violet-300">Bilingual collaboration (ES/EN)</span>
-                    </div>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-                        Full-Stack Developer building production-ready web and mobile applications
-                    </h1>
-                    <h2 className="text-xl md:text-2xl mb-4 text-transparent bg-clip-text bg-linear-to-r from-primary to-accent font-semibold">
-                        {PERSONAL_INFO.name}
-                    </h2>
-                    <p className="text-lg text-gray-400 mb-8 max-w-2xl leading-relaxed">
-                        {t.hero.description}
-                    </p>
+                    </motion.span>
 
-                    <div className="flex flex-wrap gap-4">
+                    <motion.div variants={itemVariants} className="mb-5 flex flex-wrap gap-2">
+                        {t.hero.highlights.map((highlight) => (
+                            <span
+                                key={highlight}
+                                className="rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-xs font-medium text-white/80 shadow-sm backdrop-blur md:text-sm"
+                            >
+                                {highlight}
+                            </span>
+                        ))}
+                    </motion.div>
+
+                    <motion.h1
+                        variants={itemVariants}
+                        className="mb-6 text-4xl font-bold leading-[1.05] text-white sm:text-5xl md:text-6xl lg:text-7xl"
+                    >
+                        {t.hero.headline} <br />
+                        <span className="bg-linear-to-r from-white via-accent to-secondary bg-clip-text text-transparent">
+                            {PERSONAL_INFO.name}
+                        </span>
+                    </motion.h1>
+
+                    <motion.p
+                        variants={itemVariants}
+                        className="mb-9 max-w-xl text-base leading-8 text-white/70 md:text-lg"
+                    >
+                        {t.hero.description}
+                    </motion.p>
+
+                    <motion.div variants={itemVariants} className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                        <Link
+                            href="#contact"
+                            className="group inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 text-sm font-bold uppercase tracking-[0.16em] text-slate-950 shadow-[0_18px_50px_rgba(6,182,212,0.32)] transition duration-300 hover:-translate-y-0.5 hover:bg-cyan-300 hover:shadow-[0_22px_60px_rgba(6,182,212,0.42)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent active:scale-[0.98]"
+                        >
+                            <BriefcaseBusiness size={18} />
+                            {t.hero.ctaHire}
+                            <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
+                        </Link>
                         <Link
                             href="#projects"
-                            className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-medium transition-transform active:scale-95 flex items-center gap-2"
+                            className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-6 py-4 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/[0.1] active:scale-[0.98]"
                         >
                             {t.hero.ctaProject} <ArrowRight size={18} />
                         </Link>
@@ -51,30 +99,35 @@ export default function Hero() {
                             href={language === "en" ? PERSONAL_INFO.resumeEn : PERSONAL_INFO.resumeEs}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="glass hover:bg-white/10 text-white px-8 py-3 rounded-full font-medium transition-transform active:scale-95 flex items-center gap-2 border border-white/10"
+                            className="inline-flex items-center justify-center gap-2 rounded-full px-5 py-4 text-sm font-semibold text-white/70 transition duration-300 hover:text-white active:scale-[0.98]"
                         >
                             {t.hero.ctaCV} <Download size={18} />
                         </a>
-                    </div>
+                    </motion.div>
                 </motion.div>
 
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="relative hidden md:block"
+                    initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 24, scale: shouldReduceMotion ? 1 : 0.96 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ duration: 0.7, delay: shouldReduceMotion ? 0 : 0.22 }}
+                    className="relative mx-auto w-full max-w-[380px] md:max-w-[430px]"
                 >
-                    <div className="relative w-full aspect-square max-w-[400px] mx-auto group">
-                        <div className="absolute inset-0 bg-linear-to-tr from-primary to-secondary rounded-4xl opacity-20 blur-3xl animate-pulse group-hover:opacity-30 transition-opacity duration-500" />
-                        <div className="relative z-10 w-full h-full glass-card rounded-4xl p-3 border border-white/10 shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500 overflow-hidden">
+                    <div className="group relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-3 shadow-2xl shadow-black/40 backdrop-blur">
+                        <div className="absolute inset-x-3 top-3 z-20 flex justify-end">
+                            <span className="rounded-full border border-emerald-400/25 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-200">
+                                {PERSONAL_INFO.available}
+                            </span>
+                        </div>
+                        <div className="relative h-full overflow-hidden rounded-[1.35rem]">
                             <Image
                                 src={PERSONAL_INFO.profileImage}
                                 alt={PERSONAL_INFO.name}
-                                width={400}
-                                height={400}
-                                className="w-full h-full object-cover rounded-2xl"
+                                width={520}
+                                height={650}
+                                className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
                                 priority
                             />
+                            <div className="absolute inset-0 bg-linear-to-t from-black/45 via-transparent to-transparent" />
                         </div>
                     </div>
                 </motion.div>
