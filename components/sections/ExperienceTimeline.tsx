@@ -4,22 +4,6 @@ import { motion } from "framer-motion";
 
 const experienceItems = [
   {
-    role: "AI Developer | Full-Stack Engineer",
-    company: "AI-Assisted Product Development",
-    dates: "Ongoing",
-    responsibilities: [
-      "Use ChatGPT, Claude, Cursor, and Codex to understand existing codebases and plan coherent changes.",
-      "Build end-to-end features across React, Next.js, TypeScript, REST APIs, backend logic, and SQL.",
-      "Investigate bugs methodically, refactor fragile code, write queries and migrations, and validate changes with tests.",
-      "Use GPT-5, current OpenAI models, Claude Sonnet, and coding agents with judgment: verify assumptions, challenge hallucinated details, and review generated code before delivery.",
-      "Optimize AI workflows with tools such as gentle-ai, Hernes, Engram, and OpenCode, including skill generation and token-aware execution."
-    ],
-    achievements: [
-      "Turned AI into a repeatable engineering workflow with human review, clear hypotheses, and production-quality standards.",
-      "Delivered maintainable web and mobile products while moving efficiently across UI, integrations, server logic, and persistence."
-    ]
-  },
-  {
     role: "Full-Stack Developer",
     company: "Government Digital Platforms (Michoacán)",
     dates: "[Add exact dates]",

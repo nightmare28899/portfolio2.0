@@ -11,8 +11,8 @@ export const COMPANIES = [
 
 export const PERSONAL_INFO = {
   name: "Kevin López",
-  role: "AI Developer | Full-Stack Engineering, React, Next.js & TypeScript",
-  bio: "AI-oriented Full-Stack Developer who uses GPT-5, Claude Sonnet, ChatGPT, Cursor, Codex and other coding agents as engineering multipliers—while verifying assumptions, reviewing generated code, and shipping maintainable production software.",
+  role: "Full-Stack Developer | React, React Native, TypeScript, Laravel & Node.js",
+  bio: "I am a Full-Stack developer with a passion for creating beautiful responsive websites. I have a passion for learning new technologies and practicing by doing projects; I am dedicated to building robust and scalable web applications.",
   experience: "4+ years of professional experience",
   freelance: "Freelance",
   available: "Available",
@@ -21,8 +21,8 @@ export const PERSONAL_INFO = {
   github: "https://github.com/nightmare28899",
   linkedin: "https://linkedin.com/in/kevinlg-dev",
   profileImage: assetUrl("images/profile/profile.png"),
-  resumeEn: assetUrl("cv/CV_KLG_AI_Developer.pdf"),
-  resumeEs: assetUrl("cv/CV_KLG_AI_Developer.pdf"),
+  resumeEn: assetUrl("cv/CV_KLG.pdf"),
+  resumeEs: assetUrl("cv/CV_KLG_SPANISH.pdf"),
 };
 
 export const DATA = {
@@ -36,9 +36,9 @@ export const DATA = {
       contact: "Contact",
     },
     hero: {
-      role: "AI Developer | Full-Stack Engineering, React, Next.js & TypeScript",
+      role: "Full-Stack Developer | React, React Native, TypeScript, Laravel & Node.js",
       greeting: "Hi, I'm",
-      description: "I use AI coding agents as a practical engineering multiplier: understanding existing codebases, planning changes, generating and reviewing code, investigating bugs, and shipping reliable end-to-end features.\n\nMy foundation is full-stack development with React, Next.js, TypeScript, REST APIs, SQL, Laravel, Node.js, and React Native, with a focus on clean architecture, testing, performance, and maintainability.",
+      description: "I build cross-platform mobile apps and scalable web systems with React Native, JavaScript/TypeScript, Laravel, and modern frontend frameworks.\n\nI focus on clean architecture, performance, and business impact—shipping production-ready solutions for real users while collaborating across design, backend, and product teams.",
       ctaProject: "View Projects",
       ctaCV: "Download CV",
       techTitle: "Modern Tech",
@@ -46,8 +46,8 @@ export const DATA = {
     },
     about: {
       title: "Experience Snapshot",
-      role: "AI Developer | Full-Stack Engineer",
-      description: "AI-oriented Full-Stack Developer with strong Front-End foundations and practical experience using AI coding agents throughout the software lifecycle: codebase discovery, solution design, implementation, debugging, refactoring, testing, and delivery.",
+      role: "Full-Stack Developer",
+      description: "Full-Stack Developer with a strong Front-End focus, experienced in leading and structuring scalable front-end solutions for real-world products. I focus on clean architecture, performance optimization, and long-term maintainability, contributing not only with code but also with technical decision-making and team collaboration.",
       experience: "4+ years of professional experience",
       experienceLabel: "Experience",
       freelance: "Freelance",
