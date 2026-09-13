@@ -295,6 +295,11 @@ export const DATA = {
     contact: {
       title: "Contact",
       subtitle: "Open to remote full-time opportunities. Response time: within 24 hours.",
+      availability: "Open to remote full-time opportunities as a Full-Stack Developer.",
+      contactMe: "Contact Me",
+      downloadResume: "Download Resume",
+      linkedin: "LinkedIn",
+      github: "GitHub",
       name: "Name",
       namePlaceholder: "John Doe",
       email: "Email",
@@ -605,6 +610,11 @@ export const DATA = {
     contact: {
       title: "Contacto",
       subtitle: "Abierto a oportunidades remotas full-time. Tiempo de respuesta: dentro de 24 horas.",
+      availability: "Disponible para oportunidades remotas de tiempo completo como Full-Stack Developer.",
+      contactMe: "Contáctame",
+      downloadResume: "Descargar CV",
+      linkedin: "LinkedIn",
+      github: "GitHub",
       name: "Nombre",
       namePlaceholder: "Juan Pérez",
       email: "Correo",
